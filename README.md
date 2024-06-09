@@ -11,23 +11,23 @@ Important question Of DSA and Other interviews
 ***`Imp Note`*** Please add more questions in end of the list of every category, no matter what difficulty because it will be easy to find the solution in as all questions are numbered.
 
 ### Arrays & Strings
-1. - [ ] [Two Sum](https://leetcode.com/problems/two-sum/) (Easy)
-2. - [ ] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (Easy)
+1. - [X] [Two Sum](https://leetcode.com/problems/two-sum/) (Easy)
+2. - [X] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (Easy)
 3. - [ ] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) (Easy)
 4. - [ ] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Easy)
 5. - [ ] [Plus One](https://leetcode.com/problems/plus-one/) (Easy)
 6. - [ ] [Move Zeroes](https://leetcode.com/problems/move-zeroes/) (Easy)
 7. - [ ] [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) (Easy)
 8. - [ ] [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) (Easy)
-9. - [ ] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
+9. - [X] [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
 10. - [ ] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) (Medium)
 11. - [ ] [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) (Medium)
 12. - [ ] [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) (Medium)
-13. - [ ] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (Medium)
+13. - [X] [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (Medium)
 14. - [ ] [3Sum](https://leetcode.com/problems/3sum/) (Medium)
 15. - [ ] [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
 16. - [ ] [Rotate Image](https://leetcode.com/problems/rotate-image/) (Medium)
-17. - [ ] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
+17. - [X] [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
 
 ### Linked Lists
 1. - [ ] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) (Easy)
