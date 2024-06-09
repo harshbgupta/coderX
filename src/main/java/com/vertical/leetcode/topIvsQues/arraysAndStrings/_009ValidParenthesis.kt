@@ -1,4 +1,4 @@
-package com.vertical.leetcode.arrays
+package com.vertical.leetcode.topIvsQues.arraysAndStrings
 
 import toJsonString
 
