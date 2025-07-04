@@ -1,5 +1,6 @@
 package com.kritsn
 
+import com.kritsn.scaler.dsa.intrermediate1.Bag
 import toJsonString
 
 /**
@@ -8,36 +9,95 @@ import toJsonString
  * @author Radhey (hr-sh)
  * @since July 04, 2025
  */
-fun main(args: Array<String>) {
-    println(
-        "Result: " +
-                toJsonString(twoSum(intArrayOf(3, 3), 6))
-    )
+
+fun main() {
+    var nums1 = intArrayOf(2, 2, 3, 4, 0)
+    var nums2 = intArrayOf(1)
+    Bag.printArray(mergeSortedArrayOptimised(nums1, 4, nums2, nums2.size))
 }
 
-/**
- * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
- * You may assume that each input would have exactly one solution, and you may not use the same element twice.
- * You can return the answer in any order.
- */
-private fun twoSum(nums: IntArray, target: Int): IntArray? {
-    val intArray = IntArray(2)
-    //for (i in 0 until nums.size - 1) {
-    // this will not work assume the edge case [3,3],target is 6
-    //because for i =0 if we check diff index it will return 0  and if put the condition index != i, so in this case,
-    //code will fail, So we will run the loop from end that will solve the issue first iteration on i =1 the diff
-    // index will 0 which will work and resolve the case
+fun mergeSortedArrayBruteForce(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray {
+//    val n = nums1.size
+//    val m = nums1.size
+    var sol = IntArray(m + n)
+    var index = 0
 
-    for (i in nums.size - 1 downTo 0) {//this will work assume the edge case [3,3],target is 6
-        val diff = target - nums[i]
-        val index = nums.indexOf(diff)
-        println("i and index $i , $index")
-        if (index != -1 && index != i) {
-            println("i and index after $i , $index")
-            intArray[0] = i
-            intArray[1] = index
-            return intArray
+    var i = 0
+    var j = 0
+
+    while (i + j < m + n) {
+        if (i >= m || j >= n) {
+            while (i < m) {
+                val element = nums1[i]
+                sol[index] = element
+                index++ //increasing index of Sol
+                i++ //increasing index for nums 1
+            }
+
+            while (j < n) {
+                val element = nums2[j]
+                sol[index] = element
+                index++ //increasing index of Sol
+                j++ //increasing index for nums 1
+            }
+        } else {
+            val element1 = nums1[i]
+            val element2 = nums2[j]
+
+            when {
+                element1 < element2 -> {
+                    sol[index] = element1
+                    index++ //increasing index of Sol
+                    i++ //increasing index for nums 1
+                }
+
+                element1 > element2 -> {
+                    sol[index] = element2
+                    index++ //increasing index of Sol
+                    j++ //increasing index for nums 2
+                }
+
+                else -> {
+                    //element1 == element2 condition
+                    sol[index] = element1
+                    index++ //increasing index of Sol
+                    i++ //increasing index for nums 1
+                    sol[index] = element2
+                    index++ //increasing index of Sol
+                    j++ //increasing index for nums 1
+                }
+            }
         }
     }
-    return null
+    for ((index, ele) in sol.withIndex()) {
+        nums1[index] = ele
+    }
+    return nums1
+}
+
+
+fun mergeSortedArrayOptimised(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray {
+    var i = m - 1
+    var j = n - 1
+    var k = m + n - 1
+
+    while (i >= 0 && j >= 0) {
+        if (nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i]
+            i--
+        } else {
+            nums1[k] = nums2[j]
+            j--
+        }
+        k--
+    }
+
+    //we are checking only 2nd array coz first array is already sorted,
+    // and 2nd array are done then we do not require to following on first array
+    while (j >= 0) {
+        nums1[k] = nums2[j]
+        j--
+        k--
+    }
+    return nums1
 }
