@@ -1,9 +1,17 @@
-package com.kritsn.leetcode.topIvsQues.arraysAndStrings
+package com.kritsn.leetcode
 
-import toJsonString
+import java.util.Stack
+import kotlin.text.iterator
 
 fun main(args: Array<String>) {
-    println("Result: " + toJsonString(validParenthesis2("({{{{}}}))")))
+    val braces1  = "()[]{}"
+    val braces2  = "([)]"
+    val braces3  = "{[]}"
+    val braces4  = "({{{{}}}))"
+    println("Input: '$braces1', Output: ${validParenthesisOptimised(braces1)}")       // Expected: true
+    println("Input: '$braces2', Output: ${validParenthesisOptimised(braces2)}")         // Expected: false
+    println("Input: '$braces3', Output: ${validParenthesisOptimised(braces3)}")         // Expected: true
+    println("Input: '$braces4', Output: ${validParenthesisOptimised(braces4)}") // Expected: false
 }
 
 
@@ -60,4 +68,29 @@ private fun validParenthesis2(s: String): Boolean {
         }
     }
     return tempString.isEmpty()
+}
+
+//TODO:*****
+private fun validParenthesisOptimised(s: String): Boolean {
+    // The ArrayDeque class is a more efficient and preferred stack implementation than the legacy Stack class.
+    val stack = Stack<Char>()
+
+    // A map makes the matching logic clean and easily extensible.
+    val bracketMap = mapOf(')' to '(', '}' to '{', ']' to '[')
+
+    for (char in s) {
+        // If the character is a closing bracket
+        if (bracketMap.containsKey(char)) {
+            // If the stack is empty or the top element doesn't match, it's invalid.
+            if (stack.isEmpty() || stack.pop() != bracketMap[char]) {
+                return false
+            }
+        } else {
+            // If it's an opening bracket, push it onto the stack.
+            stack.push(char)
+        }
+    }
+
+    // A valid string means all brackets have been matched, so the stack must be empty.
+    return stack.isEmpty()
 }

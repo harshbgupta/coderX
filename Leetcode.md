@@ -5,19 +5,19 @@ Important question Of DSA and Other interviews
 ***`Imp Note`*** Please add more questions in end of the list of every category, no matter what difficulty because it will be easy to find the solution in as all questions are numbered.
 
 # Leetcode Questions
-1. - [X] [1: Two Sum](https://leetcode.com/problems/two-sum/) (Easy)
-2. - [X] [3: Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
-3. - [X] [20: Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
-4. - [X] [33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (Easy)
-5. - [X] [121: Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (Easy)
-6. - [X] [88: Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)(Easy)
-7. - [X] [225: Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)(Easy)
-8. - [ ] [27: Remove Element](https://leetcode.com/problems/remove-element/) (Medium)
+1. - [X] [1: Two Sum](https://leetcode.com/problems/two-sum/) (Easy) - [_001TwoSum.kt](src/main/java/com/kritsn/leetcode/_001TwoSum.kt)
+2. - [X] [3: Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium) - [_003LongestSubstring.kt](src/main/java/com/kritsn/leetcode/_003LongestSubstring.kt)
+3. - [X] [20: Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy) - [_020ValidParenthesis.kt](src/main/java/com/kritsn/leetcode/_020ValidParenthesis.kt)
+4. - [X] [33: Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (Easy) - [_033SearchInRotatedSortedArray.kt](src/main/java/com/kritsn/leetcode/_033SearchInRotatedSortedArray.kt)
+5. - [X] [121: Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) (Easy) - [_121MaxProfitInStock.kt](src/main/java/com/kritsn/leetcode/_121MaxProfitInStock.kt)
+6. - [X] [88: Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)(Easy) - [_088MergeSortedArray.kt](src/main/java/com/kritsn/leetcode/_088MergeSortedArray.kt)
+7. - [X] [225: Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues)(Easy) - [_225StackUsingQueue.kt](src/main/java/com/kritsn/leetcode/_225StackUsingQueue.kt)
+8. - [ ] [27: Remove Element](https://leetcode.com/problems/remove-element/) (Medium) - [_027RemoveElement.kt](src/main/java/com/kritsn/leetcode/_027RemoveElement.kt)
 9. - [ ] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Easy)
 10. - [ ] [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) (Easy)
 11. - [ ] [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) (Easy)
 12. - [ ] [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) (Easy)
-13. - [ ] [Reverse Integer](https://leetcode.com/problems/reverse-integer/) (Easy)
+13. - [ ] [Reverse Integer](https://leetcode.com/problems/reverse-integer/) (Easy)r
 14. - [ ] [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) (Easy)
 15. - [ ] [Palindrome Number](https://leetcode.com/problems/palindrome-number/) (Easy)
 16. - [ ] [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) (Easy)
@@ -242,7 +242,7 @@ It contains the course programs and notes which has given by Scaler Tutors and d
 1. Intro DSA
 2. Time Complexity
 3. Intro to Array
-4. Bag -->  Basic and common functions
+4. Bag - Basic and common functions
 5. Array DSA
 6. Introduction to problem-solving
 7. Sub Array

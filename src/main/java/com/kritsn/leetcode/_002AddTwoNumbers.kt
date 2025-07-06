@@ -1,4 +1,4 @@
-package com.kritsn.leetcode.topIvsQues.linkedLists
+package com.kritsn.leetcode
 
 /**
  * QUESTION:

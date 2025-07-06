@@ -1,6 +1,8 @@
 package com.kritsn.scaler.dsa.intrermediate1;
 
 
+import com.kritsn.utils.Bag;
+
 import java.util.ArrayList;
 
 public class Matrices2D {
@@ -170,6 +172,7 @@ public class Matrices2D {
         }
 
         Bag.print2DArray(transposeMatrix);
+        System.out.println("Printing transposed Matrix" +Bag.return2DArrayAsString(transposeMatrix));
     }
 
     /**
