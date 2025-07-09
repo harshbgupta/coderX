@@ -1,4 +1,4 @@
-package com.kritsn
+package com.kritsn.leetcode
 
 import com.kritsn.utils.Bag
 
@@ -10,12 +10,10 @@ import com.kritsn.utils.Bag
  */
 
 fun main() {
-    var nums1 = intArrayOf(2, 2, 3, 4, 0)
-    var nums2 = intArrayOf(1)
-    Bag.printArray(mergeSortedArrayOptimised(nums1, 4, nums2, nums2.size))
+
 }
 
-fun mergeSortedArrayOptimised(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray {
+fun solution(nums1: IntArray, m: Int, nums2: IntArray, n: Int): IntArray {
     var p1 = m - 1
     var p2 = n - 1
 
