@@ -50,27 +50,27 @@ class _026RemoveDuplicateFromSortedArray {
             return 0
         }
 
-        // 'insertIndex' is the slow-runner pointer. It marks the position
+        // 'insertIndexSlowPointer' is the slow-runner pointer. It marks the position
         // for the next unique element. It starts at 1 because the first
         // element is always unique and in its correct place.
-        var insertIndex = 1
+        var insertIndexSlowPointer = 1
 
         // We iterate through the array with a fast-runner 'i' starting from the second element.
-        for (i in 1..<nums.size) {
+        for (iOrFastPointer in 1..<nums.size) {
             // Compare the current element with the last unique element found.
-            // The last unique element is at nums[insertIndex - 1].
-            if (nums[i] != nums[insertIndex - 1]) {
+            // The last unique element is at nums[insertIndexSlowPointer - 1].
+            if (nums[iOrFastPointer] != nums[insertIndexSlowPointer - 1]) {
                 // If they are different, we have found a new unique element.
-                // Place it at the 'insertIndex' position.
-                nums[insertIndex] = nums[i]
-                // Move the insertIndex forward to mark the new boundary of the unique subarray.
-                insertIndex++
+                // Place it at the 'insertIndexSlowPointer' position.
+                nums[insertIndexSlowPointer] = nums[iOrFastPointer]
+                // Move the insertIndexSlowPointer forward to mark the new boundary of the unique subarray.
+                insertIndexSlowPointer++
             }
-            // If nums[i] is a duplicate, we do nothing and just let 'i' increment,
+            // If nums[iOrFastPointer] is a duplicate, we do nothing and just let 'iOrFastPointer' increment,
             // effectively skipping the duplicate.
         }
 
-        // 'insertIndex' now represents the total number of unique elements.
-        return insertIndex
+        // 'insertIndexSlowPointer' now represents the total number of unique elements.
+        return insertIndexSlowPointer
     }
 }

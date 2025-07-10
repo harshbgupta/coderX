@@ -78,7 +78,7 @@ Important question Of DSA and Other interviews
 * [ ] [224: Basic Calculator](https://leetcode.com/problems/basic-calculator/) (Hard)
 
 ### Linked List
-* [ ] [141: Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
+* [X] [141: Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
 * [X] [2: Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
 * [ ] [21: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (Easy)
 * [ ] [138: Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) (Medium)
