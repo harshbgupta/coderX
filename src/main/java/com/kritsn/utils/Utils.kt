@@ -60,3 +60,17 @@ fun isLeapYear(year: Int) {
         println("$year is not a leap year")
     }
 }
+
+// Helper function to reverse a portion of the array in-place
+fun reverse(start: Int, end: Int, nums: IntArray) {
+    var left = start
+    var right = end
+    while (left < right) {
+        // Swap elements at left and right indices
+        val temp = nums[left]
+        nums[left] = nums[right]
+        nums[right] = temp
+        left++
+        right--
+    }
+}
