@@ -28,13 +28,13 @@ Important question Of DSA and Other interviews
 * [X] [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) (Medium)
 * [X] [58. Length of Last Word](https://leetcode.com/problems/length-of-last-word/) (Easy)
 * [X] [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) (Easy)
-* [ ] [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) (Medium)
-* [ ] [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) (Medium)
-* [ ] [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
-* [ ] [68. Text Justification](https://leetcode.com/problems/text-justification/) (Hard)
+* [X] [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) (Medium)
+* [X] [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) (Medium)
+* [X] [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
+* [X] [68. Text Justification](https://leetcode.com/problems/text-justification/) (Hard)
 
 ### Two Pointers
-* [ ] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
+* [X] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
 * [ ] [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/) (Easy)
 * [ ] [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) (Medium)
 * [ ] [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) (Medium)
