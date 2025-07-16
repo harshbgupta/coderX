@@ -5,7 +5,7 @@ Important question Of DSA and Other interviews
 ***`Imp Note`*** Please add more questions in end of the list of every category, no matter what difficulty because it will be easy to find the solution in as all questions are numbered.
 
 # Leetcode Questions 
-## Top Interview 150 - Categorized List
+## Top Interview 150 Categorized List
 
 ### Array / String
 1. * [X] [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) (Easy)
