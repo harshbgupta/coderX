@@ -43,15 +43,16 @@ Important question Of DSA and Other interviews
 ### Sliding Window
 1. * [X] [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) (Medium)
 2. * [X] [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) (Medium)
-3. * [ ] [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) (Hard)
-4. * [ ] [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
+3. * [X] [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) (Hard)
+4. * [X] [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
 
 ### Matrix
-1. * [ ] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) (Medium)
-2. * [ ] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) (Medium)
-3. * [ ] [48. Rotate Image](https://leetcode.com/problems/rotate-image/) (Medium)
-4. * [ ] [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (Medium)
-5. * [ ] [289. Game of Life](https://leetcode.com/problems/game-of-life/) (Medium)
+1. * [X] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) (Medium)
+2. * [X] [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) (Hard)
+3. * [X] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) (Medium)
+4. * [X] [48. Rotate Image](https://leetcode.com/problems/rotate-image/) (Medium)
+5. * [ ] [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) (Medium)
+6. * [ ] [289. Game of Life](https://leetcode.com/problems/game-of-life/) (Medium)
 
 ### Hashmap
 1. * [ ] [383. Ransom Note](https://leetcode.com/problems/ransom-note/) (Easy)
