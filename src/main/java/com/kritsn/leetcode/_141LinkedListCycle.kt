@@ -1,44 +1,12 @@
 package com.kritsn.leetcode
 
+
 /**
  * Copyright © 2025 Kritsn LLP. All rights reserved.
  *
  * @author Radhey (hr-sh)
  * @since July 09, 2025
  */
-fun main() {
-    val solution = _141LinkedListCycle()
-
-    // Test case 1: No cycle
-    val node1 = ListNode(1)
-    val node2 = ListNode(1)
-    val node3 = ListNode(1)
-    node1.next = node2
-    node2.next = node3
-    println("Test 1 (No cycle): " + solution.hasCycle(node1)) // Expected: false
-
-    // Test case 2: Cycle exists (last node points to node2)
-    val node4 = ListNode(1)
-    val node5 = ListNode(1)
-    val node6 = ListNode(1)
-    node4.next = node5
-    node5.next = node6
-    node6.next = node5 // cycle here
-    println("Test 2 (Cycle exists): " + solution.hasCycle(node4)) // Expected: true
-
-    // Test case 3: Single node, no cycle
-    val node7 = ListNode(1)
-    println("Test 3 (Single node, no cycle): " + solution.hasCycle(node7)) // Expected: false
-
-    // Test case 4: Single node, cycle to itself
-    val node8 = ListNode(1)
-    node8.next = node8
-    println("Test 4 (Single node, cycle to itself): " + solution.hasCycle(node8)) // Expected: true
-
-    // Test case 5: Empty list
-    println("Test 5 (Empty list): " + solution.hasCycle(null)) // Expected: false
-}
-
 /**
  * Given head, the head of a linked list, determine if the linked list has a cycle in it.
  *
@@ -47,6 +15,13 @@ fun main() {
  * Return true if there is a cycle in the linked list. Otherwise, return false.
  */
 class _141LinkedListCycle {
+
+    /**
+     * Definition for singly-linked list node.
+     */
+    class ListNode(var `val`: Int) {
+        var next: ListNode? = null
+    }
 
     /**
      * It's a fact if a linked list has cycle at some point then fast pointer and slow pointer will be same
@@ -103,6 +78,43 @@ class _141LinkedListCycle {
             curNode = curNode.next
         }
         return false
+
+    }
+
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solution = _141LinkedListCycle()
+
+            // Test case 1: No cycle
+            val node1 = ListNode(1)
+            val node2 = ListNode(1)
+            val node3 = ListNode(1)
+            node1.next = node2
+            node2.next = node3
+            println("Test 1 (No cycle): " + solution.hasCycle(node1)) // Expected: false
+
+            // Test case 2: Cycle exists (last node points to node2)
+            val node4 = ListNode(1)
+            val node5 = ListNode(1)
+            val node6 = ListNode(1)
+            node4.next = node5
+            node5.next = node6
+            node6.next = node5 // cycle here
+            println("Test 2 (Cycle exists): " + solution.hasCycle(node4)) // Expected: true
+
+            // Test case 3: Single node, no cycle
+            val node7 = ListNode(1)
+            println("Test 3 (Single node, no cycle): " + solution.hasCycle(node7)) // Expected: false
+
+            // Test case 4: Single node, cycle to itself
+            val node8 = ListNode(1)
+            node8.next = node8
+            println("Test 4 (Single node, cycle to itself): " + solution.hasCycle(node8)) // Expected: true
+
+            // Test case 5: Empty list
+            println("Test 5 (Empty list): " + solution.hasCycle(null)) // Expected: false
+        }
 
     }
 }

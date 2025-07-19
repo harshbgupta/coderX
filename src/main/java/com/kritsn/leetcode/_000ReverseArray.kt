@@ -47,29 +47,34 @@ class _000ReverseArray {
             right--
         }
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _000ReverseArray()
+    companion object {
 
-    val case1 = intArrayOf(1, 2, 3, 4, 5)
-    solver.reverseArray(case1)
-    println("Test Case 1: Reversed Array = ${case1.contentToString()}") // Expected: [5, 4, 3, 2, 1]
+        // 🔍 Main method with clearly labeled test cases
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _000ReverseArray()
 
-    val case2 = intArrayOf(10, 20)
-    solver.reverseArray(case2)
-    println("Test Case 2: Reversed Array = ${case2.contentToString()}") // Expected: [20, 10]
+            val case1 = intArrayOf(1, 2, 3, 4, 5)
+            solver.reverseArray(case1)
+            println("Test Case 1: Reversed Array = ${case1.contentToString()}") // Expected: [5, 4, 3, 2, 1]
 
-    val case3 = intArrayOf(100)
-    solver.reverseArray(case3)
-    println("Test Case 3: Reversed Array = ${case3.contentToString()}") // Expected: [100]
+            val case2 = intArrayOf(10, 20)
+            solver.reverseArray(case2)
+            println("Test Case 2: Reversed Array = ${case2.contentToString()}") // Expected: [20, 10]
 
-    val case4 = intArrayOf()
-    solver.reverseArray(case4)
-    println("Test Case 4: Reversed Array = ${case4.contentToString()}") // Expected: []
+            val case3 = intArrayOf(100)
+            solver.reverseArray(case3)
+            println("Test Case 3: Reversed Array = ${case3.contentToString()}") // Expected: [100]
 
-    val case5 = intArrayOf(-1, 0, 1)
-    solver.reverseArray(case5)
-    println("Test Case 5: Reversed Array = ${case5.contentToString()}") // Expected: [1, 0, -1]
+            val case4 = intArrayOf()
+            solver.reverseArray(case4)
+            println("Test Case 4: Reversed Array = ${case4.contentToString()}") // Expected: []
+
+            val case5 = intArrayOf(-1, 0, 1)
+            solver.reverseArray(case5)
+            println("Test Case 5: Reversed Array = ${case5.contentToString()}") // Expected: [1, 0, -1]
+        }
+
+    }
 }

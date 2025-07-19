@@ -67,9 +67,9 @@ Important question Of DSA and Other interviews
 
 ### Intervals
 1. [X] [228. Summary Ranges](https://leetcode.com/problems/summary-ranges/) (Easy)
-2. [ ] [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) (Medium)
-3. [ ] [57. Insert Interval](https://leetcode.com/problems/insert-interval/) (Medium)
-4. [ ] [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
+2. [X] [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) (Medium)
+3. [X] [57. Insert Interval](https://leetcode.com/problems/insert-interval/) (Medium)
+4. [X] [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) (Medium)
 
 ### Stack
 1. [X] [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
