@@ -73,16 +73,16 @@ Important question Of DSA and Other interviews
 
 ### Stack
 1. [X] [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) (Easy)
-2. [ ] [71. Simplify Path](https://leetcode.com/problems/simplify-path/) (Medium)
-3. [ ] [155. Min Stack](https://leetcode.com/problems/min-stack/) (Medium)
-4. [ ] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
-5. [ ] [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/) (Hard)
+2. [X] [71. Simplify Path](https://leetcode.com/problems/simplify-path/) (Medium)
+3. [X] [155. Min Stack](https://leetcode.com/problems/min-stack/) (Medium)
+4. [X] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
+5. [X] [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/) (Hard)
 
 ### Linked List
 1. [X] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
 2. [X] [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
-3. [ ] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (Easy)
-4. [ ] [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) (Medium)
+3. [X] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (Easy)
+4. [X] [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) (Medium)
 5. [ ] [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) (Medium)
 6. [ ] [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) (Hard)
 7. [ ] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) (Medium)
