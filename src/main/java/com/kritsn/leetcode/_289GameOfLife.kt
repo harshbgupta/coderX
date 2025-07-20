@@ -13,6 +13,7 @@ package com.kritsn.leetcode
 class _289GameOfLife {
 
     ///////////////////////////////////////////////////////////////////////////
+    // https://youtu.be/lEeJyUW-xLc?feature=shared
     // In-place Encoding Method:
     // We solve this problem by encoding state transitions directly into the grid.
     //

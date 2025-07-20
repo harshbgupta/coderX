@@ -46,7 +46,7 @@ Important question Of DSA and Other interviews
 3. [X] [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/) (Hard)
 4. [X] [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) (Hard)
 
-### Matrix
+### Matrix (Imp Revise always)
 1. [X] [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) (Medium)
 2. [X] [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) (Hard)
 3. [X] [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) (Medium)
@@ -78,18 +78,19 @@ Important question Of DSA and Other interviews
 4. [X] [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) (Medium)
 5. [X] [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/) (Hard)
 
-### Linked List
+### Linked List (Imp Revise always)
 1. [X] [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) (Easy)
 2. [X] [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) (Medium)
 3. [X] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) (Easy)
 4. [X] [138. Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) (Medium)
-5. [ ] [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) (Medium)
-6. [ ] [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) (Hard)
-7. [ ] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) (Medium)
-8. [ ] [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
-9. [ ] [61. Rotate List](https://leetcode.com/problems/rotate-list/) (Medium)
-10. [ ] [86. Partition List](https://leetcode.com/problems/partition-list/) (Medium)
-11. [ ] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) (Medium)
+5. [X] [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) (Easy)
+6. [X] [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) (Medium)
+7. [X] [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) (Hard)
+8. [X] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) (Medium)
+9. [ ] [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
+10. [ ] [61. Rotate List](https://leetcode.com/problems/rotate-list/) (Medium)
+11. [ ] [86. Partition List](https://leetcode.com/problems/partition-list/) (Medium)
+12. [ ] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) (Medium)
 
 ### Binary Tree General
 1. [ ] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (Easy)
