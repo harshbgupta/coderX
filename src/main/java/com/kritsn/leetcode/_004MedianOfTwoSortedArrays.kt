@@ -6,18 +6,6 @@ package com.kritsn.leetcode
  * @author Radhey (hr-sh)
  * @since July 07, 2025
  */
-fun main() {
-    val nums1 = intArrayOf(2,4)
-    val nums2 = intArrayOf(1, 3,4,6)
-    println(
-        "Median of is ${nums1.contentToString()} & ${nums2.contentToString()} is ${
-            _004MedianOfTwoSortedArrays().findMedianSortedArrays(
-                nums1,
-                nums2
-            )
-        }"
-    )
-}
 
 /**
  * LeetCode Question4: Median of Two Sorted Arrays
@@ -121,5 +109,22 @@ class _004MedianOfTwoSortedArrays {
         // This part should not be reached if the inputs are sorted arrays.
         // It's included to handle unexpected cases and make the compiler happy.
         throw IllegalArgumentException("Input arrays are not sorted.")
+    }
+
+    companion object{
+
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val nums1 = intArrayOf(2,4)
+            val nums2 = intArrayOf(1, 3,4,6)
+            println(
+                "Median of is ${nums1.contentToString()} & ${nums2.contentToString()} is ${
+                    _004MedianOfTwoSortedArrays().findMedianSortedArrays(
+                        nums1,
+                        nums2
+                    )
+                }"
+            )
+        }
     }
 }

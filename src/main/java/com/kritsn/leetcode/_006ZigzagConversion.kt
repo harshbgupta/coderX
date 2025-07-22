@@ -64,29 +64,34 @@ class _006ZigzagConversion {
         // Combine all rows into the final string
         return rows.joinToString("") { it.toString() }
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _006ZigzagConversion()
+    companion object{
 
-    val s1 = "PAYPALISHIRING"
-    val numRows1 = 3
-    println("Test Case 1: Input = \"$s1\", Rows = $numRows1 -> Output = \"${solver.convert(s1, numRows1)}\"") // Expected: "PAHNAPLSIIGYIR"
+        // 🔍 Main method with clearly labeled test cases
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _006ZigzagConversion()
 
-    val s2 = "PAYPALISHIRING"
-    val numRows2 = 4
-    println("Test Case 2: Input = \"$s2\", Rows = $numRows2 -> Output = \"${solver.convert(s2, numRows2)}\"") // Expected: "PINALSIGYAHRPI"
+            val s1 = "PAYPALISHIRING"
+            val numRows1 = 3
+            println("Test Case 1: Input = \"$s1\", Rows = $numRows1 -> Output = \"${solver.convert(s1, numRows1)}\"") // Expected: "PAHNAPLSIIGYIR"
 
-    val s3 = "A"
-    val numRows3 = 1
-    println("Test Case 3: Input = \"$s3\", Rows = $numRows3 -> Output = \"${solver.convert(s3, numRows3)}\"") // Expected: "A"
+            val s2 = "PAYPALISHIRING"
+            val numRows2 = 4
+            println("Test Case 2: Input = \"$s2\", Rows = $numRows2 -> Output = \"${solver.convert(s2, numRows2)}\"") // Expected: "PINALSIGYAHRPI"
 
-    val s4 = "AB"
-    val numRows4 = 1
-    println("Test Case 4: Input = \"$s4\", Rows = $numRows4 -> Output = \"${solver.convert(s4, numRows4)}\"") // Expected: "AB"
+            val s3 = "A"
+            val numRows3 = 1
+            println("Test Case 3: Input = \"$s3\", Rows = $numRows3 -> Output = \"${solver.convert(s3, numRows3)}\"") // Expected: "A"
 
-    val s5 = "ABCDEFGHIJKLMN"
-    val numRows5 = 5
-    println("Test Case 5: Input = \"$s5\", Rows = $numRows5 -> Output = \"${solver.convert(s5, numRows5)}\"") // Custom test
+            val s4 = "AB"
+            val numRows4 = 1
+            println("Test Case 4: Input = \"$s4\", Rows = $numRows4 -> Output = \"${solver.convert(s4, numRows4)}\"") // Expected: "AB"
+
+            val s5 = "ABCDEFGHIJKLMN"
+            val numRows5 = 5
+            println("Test Case 5: Input = \"$s5\", Rows = $numRows5 -> Output = \"${solver.convert(s5, numRows5)}\"") // Custom test
+        }
+
+    }
 }

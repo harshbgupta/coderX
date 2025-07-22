@@ -88,9 +88,9 @@ Important question Of DSA and Other interviews
 7. [X] [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) (Hard)
 8. [X] [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) (Medium)
 9. [X] [82. Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) (Medium)
-10. [ ] [61. Rotate List](https://leetcode.com/problems/rotate-list/) (Medium)
-11. [ ] [86. Partition List](https://leetcode.com/problems/partition-list/) (Medium)
-12. [ ] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) (Medium)
+10. [X] [61. Rotate List](https://leetcode.com/problems/rotate-list/) (Medium)
+11. [X] [86. Partition List](https://leetcode.com/problems/partition-list/) (Medium)
+12. [X] [146. LRU Cache](https://leetcode.com/problems/lru-cache/) (Medium)
 
 ### Binary Tree General
 1. [ ] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (Easy)

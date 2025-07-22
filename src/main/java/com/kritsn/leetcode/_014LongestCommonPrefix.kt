@@ -52,24 +52,29 @@ class _014LongestCommonPrefix {
         }
         return prefix // Longest common prefix after processing all strings
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _014LongestCommonPrefix()
+    companion object{
 
-    val case1 = arrayOf("flower", "flow", "flight")
-    println("Test Case 1: Input = ${case1.contentToString()}, Output = \"${solver.longestCommonPrefix(case1)}\"") // Expected: "fl"
+        @JvmStatic
+        // 🔍 Main method with clearly labeled test cases
+        fun main(args: Array<String>) {
+            val solver = _014LongestCommonPrefix()
 
-    val case2 = arrayOf("dog", "racecar", "car")
-    println("Test Case 2: Input = ${case2.contentToString()}, Output = \"${solver.longestCommonPrefix(case2)}\"") // Expected: ""
+            val case1 = arrayOf("flower", "flow", "flight")
+            println("Test Case 1: Input = ${case1.contentToString()}, Output = \"${solver.longestCommonPrefix(case1)}\"") // Expected: "fl"
 
-    val case3 = arrayOf("interspecies", "interstellar", "interstate")
-    println("Test Case 3: Input = ${case3.contentToString()}, Output = \"${solver.longestCommonPrefix(case3)}\"") // Expected: "inters"
+            val case2 = arrayOf("dog", "racecar", "car")
+            println("Test Case 2: Input = ${case2.contentToString()}, Output = \"${solver.longestCommonPrefix(case2)}\"") // Expected: ""
 
-    val case4 = arrayOf("a")
-    println("Test Case 4: Input = ${case4.contentToString()}, Output = \"${solver.longestCommonPrefix(case4)}\"") // Expected: "a"
+            val case3 = arrayOf("interspecies", "interstellar", "interstate")
+            println("Test Case 3: Input = ${case3.contentToString()}, Output = \"${solver.longestCommonPrefix(case3)}\"") // Expected: "inters"
 
-    val case5 = arrayOf("","")
-    println("Test Case 5: Input = ${case5.contentToString()}, Output = \"${solver.longestCommonPrefix(case5)}\"") // Expected: ""
+            val case4 = arrayOf("a")
+            println("Test Case 4: Input = ${case4.contentToString()}, Output = \"${solver.longestCommonPrefix(case4)}\"") // Expected: "a"
+
+            val case5 = arrayOf("","")
+            println("Test Case 5: Input = ${case5.contentToString()}, Output = \"${solver.longestCommonPrefix(case5)}\"") // Expected: ""
+        }
+
+    }
 }

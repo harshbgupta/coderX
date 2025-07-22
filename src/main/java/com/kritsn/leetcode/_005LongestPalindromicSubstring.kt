@@ -6,14 +6,6 @@ package com.kritsn.leetcode
  * @author Radhey (hr-sh)
  * @since July 07, 2025
  */
-
-fun main() {
-    val string1 = "babad"
-    val string2 = "cbbd"
-
-    println("Longest Palindrome in $string1 is ${_005LongestPalindromicSubstring().longestPalindrome(string1)}")
-    println("Longest Palindrome in $string2 is ${_005LongestPalindromicSubstring().longestPalindrome(string2)}")
-}
 /**
  * LeetCode 5: Longest Palindromic Substring
  *
@@ -80,5 +72,18 @@ class _005LongestPalindromicSubstring {
         // The length of the palindrome is the distance between the final pointers.
         // Example: For "aba", l ends at -1, r ends at 3. Length = 3 - (-1) - 1 = 3.
         return r - l - 1
+    }
+
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val string1 = "babad"
+            val string2 = "cbbd"
+
+            println("Longest Palindrome in $string1 is ${_005LongestPalindromicSubstring().longestPalindrome(string1)}")
+            println("Longest Palindrome in $string2 is ${_005LongestPalindromicSubstring().longestPalindrome(string2)}")
+        }
+
+
     }
 }

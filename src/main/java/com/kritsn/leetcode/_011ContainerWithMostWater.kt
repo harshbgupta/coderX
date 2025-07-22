@@ -62,21 +62,27 @@ class _011ContainerWithMostWater {
 
         return maxArea
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _011ContainerWithMostWater()
 
-    val h1 = intArrayOf(1, 8, 6, 2, 5, 4, 8, 3, 7)
-    println("Test Case 1: height = ${h1.contentToString()} -> Max Water = ${solver.maxArea(h1)}") // Expected: 49
+    companion object{
 
-    val h2 = intArrayOf(1, 1)
-    println("Test Case 2: height = ${h2.contentToString()} -> Max Water = ${solver.maxArea(h2)}") // Expected: 1
+        // 🔍 Main method with clearly labeled test cases
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _011ContainerWithMostWater()
 
-    val h3 = intArrayOf(4, 3, 2, 1, 4)
-    println("Test Case 3: height = ${h3.contentToString()} -> Max Water = ${solver.maxArea(h3)}") // Expected: 16
+            val h1 = intArrayOf(1, 8, 6, 2, 5, 4, 8, 3, 7)
+            println("Test Case 1: height = ${h1.contentToString()} -> Max Water = ${solver.maxArea(h1)}") // Expected: 49
 
-    val h4 = intArrayOf(1, 2, 1)
-    println("Test Case 4: height = ${h4.contentToString()} -> Max Water = ${solver.maxArea(h4)}") // Expected: 2
+            val h2 = intArrayOf(1, 1)
+            println("Test Case 2: height = ${h2.contentToString()} -> Max Water = ${solver.maxArea(h2)}") // Expected: 1
+
+            val h3 = intArrayOf(4, 3, 2, 1, 4)
+            println("Test Case 3: height = ${h3.contentToString()} -> Max Water = ${solver.maxArea(h3)}") // Expected: 16
+
+            val h4 = intArrayOf(1, 2, 1)
+            println("Test Case 4: height = ${h4.contentToString()} -> Max Water = ${solver.maxArea(h4)}") // Expected: 2
+        }
+
+    }
 }

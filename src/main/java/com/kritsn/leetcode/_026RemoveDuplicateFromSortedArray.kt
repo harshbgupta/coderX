@@ -6,24 +6,6 @@ package com.kritsn.leetcode
  * @author Radhey (hr-sh)
  * @since July 09, 2025
  */
-fun main() {
-    val solution = _026RemoveDuplicateFromSortedArray()
-    val testCases = listOf(
-        intArrayOf(1, 1, 2),
-        intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4),
-        intArrayOf(),
-        intArrayOf(1, 2, 3, 4)
-    )
-
-    testCases.forEach { nums ->
-        val originalArray = nums.contentToString()
-        val k = solution.removeDuplicates(nums)
-        val modifiedArray = nums.slice(0 until k).joinToString(", ")
-
-        println("Original: $originalArray Result: k = $k, Modified Nums: [$modifiedArray]")
-        println("-------------------")
-    }
-}
 
 /**
  * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique
@@ -72,5 +54,27 @@ class _026RemoveDuplicateFromSortedArray {
 
         // 'insertIndexSlowPointer' now represents the total number of unique elements.
         return insertIndexSlowPointer
+    }
+
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solution = _026RemoveDuplicateFromSortedArray()
+            val testCases = listOf(
+                intArrayOf(1, 1, 2),
+                intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4),
+                intArrayOf(),
+                intArrayOf(1, 2, 3, 4)
+            )
+
+            testCases.forEach { nums ->
+                val originalArray = nums.contentToString()
+                val k = solution.removeDuplicates(nums)
+                val modifiedArray = nums.slice(0 until k).joinToString(", ")
+
+                println("Original: $originalArray Result: k = $k, Modified Nums: [$modifiedArray]")
+                println("-------------------")
+            }
+        }
     }
 }

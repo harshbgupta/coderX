@@ -101,25 +101,28 @@ class _015ThreeSum {
 
         return res
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _015ThreeSum()
+    companion object{
+        @JvmStatic
+        // 🔍 Main method with clearly labeled test cases
+        fun main(args: Array<String>) {
+            val solver = _015ThreeSum()
 
-    val nums1 = intArrayOf(-1, 0, 1, 2, -1, -4)
-    println("Test Case 1: nums = ${nums1.contentToString()} -> Triplets = ${solver.threeSum1(nums1)}")
-    // Expected: [[-1, -1, 2], [-1, 0, 1]]
+            val nums1 = intArrayOf(-1, 0, 1, 2, -1, -4)
+            println("Test Case 1: nums = ${nums1.contentToString()} -> Triplets = ${solver.threeSum1(nums1)}")
+            // Expected: [[-1, -1, 2], [-1, 0, 1]]
 
-    val nums2 = intArrayOf(0, 1, 1)
-    println("Test Case 2: nums = ${nums2.contentToString()} -> Triplets = ${solver.threeSum(nums2)}")
-    // Expected: []
+            val nums2 = intArrayOf(0, 1, 1)
+            println("Test Case 2: nums = ${nums2.contentToString()} -> Triplets = ${solver.threeSum(nums2)}")
+            // Expected: []
 
-    val nums3 = intArrayOf(0, 0, 0)
-    println("Test Case 3: nums = ${nums3.contentToString()} -> Triplets = ${solver.threeSum1(nums3)}")
-    // Expected: [[0, 0, 0]]
+            val nums3 = intArrayOf(0, 0, 0)
+            println("Test Case 3: nums = ${nums3.contentToString()} -> Triplets = ${solver.threeSum1(nums3)}")
+            // Expected: [[0, 0, 0]]
 
-    val nums4 = intArrayOf(-2, 0, 1, 1, 2)
-    println("Test Case 4: nums = ${nums4.contentToString()} -> Triplets = ${solver.threeSum(nums4)}")
-    // Expected: [[-2, 0, 2], [-2, 1, 1]]
+            val nums4 = intArrayOf(-2, 0, 1, 1, 2)
+            println("Test Case 4: nums = ${nums4.contentToString()} -> Triplets = ${solver.threeSum(nums4)}")
+            // Expected: [[-2, 0, 2], [-2, 1, 1]]
+        }
+    }
 }

@@ -57,24 +57,29 @@ class _013RomanToInteger {
 
         return result
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _013RomanToInteger()
+    companion object{
 
-    val s1 = "III"
-    println("Test Case 1: Roman = \"$s1\" -> Integer = ${solver.romanToInt(s1)}") // Expected: 3
+        // 🔍 Main method with clearly labeled test cases
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _013RomanToInteger()
 
-    val s2 = "IV"
-    println("Test Case 2: Roman = \"$s2\" -> Integer = ${solver.romanToInt(s2)}") // Expected: 4
+            val s1 = "III"
+            println("Test Case 1: Roman = \"$s1\" -> Integer = ${solver.romanToInt(s1)}") // Expected: 3
 
-    val s3 = "IX"
-    println("Test Case 3: Roman = \"$s3\" -> Integer = ${solver.romanToInt(s3)}") // Expected: 9
+            val s2 = "IV"
+            println("Test Case 2: Roman = \"$s2\" -> Integer = ${solver.romanToInt(s2)}") // Expected: 4
 
-    val s4 = "LVIII"
-    println("Test Case 4: Roman = \"$s4\" -> Integer = ${solver.romanToInt(s4)}") // Expected: 58
+            val s3 = "IX"
+            println("Test Case 3: Roman = \"$s3\" -> Integer = ${solver.romanToInt(s3)}") // Expected: 9
 
-    val s5 = "MCMXCIV"
-    println("Test Case 5: Roman = \"$s5\" -> Integer = ${solver.romanToInt(s5)}") // Expected: 1994
+            val s4 = "LVIII"
+            println("Test Case 4: Roman = \"$s4\" -> Integer = ${solver.romanToInt(s4)}") // Expected: 58
+
+            val s5 = "MCMXCIV"
+            println("Test Case 5: Roman = \"$s5\" -> Integer = ${solver.romanToInt(s5)}") // Expected: 1994
+        }
+
+    }
 }

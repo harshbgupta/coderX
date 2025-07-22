@@ -8,7 +8,7 @@ Important question Of DSA and Other interviews
 4. Primathon Technologies Pvt Ltd
 
 # Top 150 Leetcode DSA Questions for Interviews (find under package: ../leetcode)
-File: [Leetcode Questions](Leetcode.md)
+File: [Leetcode Questions](LEET_CODE.md)
 
 # Scaler Course (find under package: ../scaler)
 It contains the course programs and notes which has given by Scaler Tutors and done by Mr. Lucifer
