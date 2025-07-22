@@ -76,9 +76,9 @@ class _092ReverseLinkedListII {
                 val sb = StringBuilder()
                 var curr = head
                 while (curr != null) {
-                    sb.append(curr.`val`)
-                    if (curr.next != null) sb.append(" -> ")
-                    curr = curr.next
+                    sb.append(curr!!.`val`)
+                    if (curr!!.next != null) sb.append(" -> ")
+                    curr = curr!!.next
                 }
                 return sb.toString()
             }
