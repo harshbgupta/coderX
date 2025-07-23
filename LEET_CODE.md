@@ -4,7 +4,7 @@ Important question Of DSA and Other interviews
 # Top 150 Leetcode DSA Questions for Interviews (find under package. ../leetcode)
 ***`Imp Note`*** Please add more questions in end of the list of every category, no matter what difficulty because it will be easy to find the solution in as all questions are numbered.
 
-# Leetcode Questions 
+# Leetcode Questions
 ## Top Interview 150 Categorized List
 
 ### Array / String
@@ -98,15 +98,16 @@ Important question Of DSA and Other interviews
 3. [X] [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) (Easy)
 4. [X] [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) (Easy)
 5. [X] [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) (Medium)
-6. [ ] [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
-7. [ ] [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
-8. [ ] [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) (Medium)
-9. [ ] [112. Path Sum](https://leetcode.com/problems/path-sum/) (Easy)
-10. [ ] [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) (Medium)
-11. [ ] [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) (Hard)
-12. [ ] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) (Medium)
-13. [ ] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) (Easy)
-14. [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
+6. [X] [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) (Medium)
+7. [X] [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) (Medium)
+8. [X] [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) (Medium)
+9. [X] [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) (Medium)
+10. [X] [112. Path Sum](https://leetcode.com/problems/path-sum/) (Easy)
+11. [X] [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) (Medium)
+12. [X] [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) (Hard)
+13. [ ] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) (Medium)
+14. [ ] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) (Easy)
+15. [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 ### Binary Tree BFS
 1. [ ] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) (Medium)
@@ -131,6 +132,80 @@ Important question Of DSA and Other interviews
 1. [ ] [909. Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) (Medium)
 2. [ ] [451. Minimum Genetic Mutation](https://leetcode.com/problems/minimum-genetic-mutation/) (Medium)
 3. [ ] [127. Word Ladder](https://leetcode.com/problems/word-ladder/) (Hard)
+
+### Trie
+1. [ ] [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) (Medium)
+2. [ ] [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) (Medium)
+3. [ ] [212. Word Search II](https://leetcode.com/problems/word-search-ii/) (Hard)
+
+### Backtracking
+1. [ ] [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) (Medium)
+2. [ ] [77. Combinations](https://leetcode.com/problems/combinations/) (Medium)
+3. [ ] [46. Permutations](https://leetcode.com/problems/permutations/) (Medium)
+4. [ ] [39. Combination Sum](https://leetcode.com/problems/combination-sum/) (Medium)
+5. [ ] [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/) (Hard)
+6. [ ] [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) (Medium)
+7. [ ] [79. Word Search](https://leetcode.com/problems/word-search/) (Medium)
+
+### Divide & Conquer
+1. [ ] [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) (Easy)
+2. [ ] [148. Sort List](https://leetcode.com/problems/sort-list/) (Medium)
+3. [ ] [427. Construct Quad Tree](https://leetcode.com/problems/construct-quad-tree/) (Medium)
+4. [ ] [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) (Hard)
+
+### Kadane's Algorithm
+1. [ ] [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) (Medium)
+2. [ ] [918. Maximum Sum Circular Subarray](https://leetcode.com/problems/maximum-sum-circular-subarray/) (Medium)
+
+### Binary Search
+1. [ ] [35. Search Insert Position](https://leetcode.com/problems/search-insert-position/) (Easy)
+2. [ ] [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) (Medium)
+3. [ ] [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/) (Medium)
+4. [X] [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) (Medium)
+5. [ ] [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) (Medium)
+6. [ ] [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) (Medium)
+7. [X] [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) (Hard)
+
+### Heap
+1. [ ] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) (Medium)
+2. [ ] [502. IPO](https://leetcode.com/problems/ipo/) (Hard)
+3. [ ] [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) (Medium)
+4. [ ] [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) (Hard)
+
+### Bit Manipulation
+1. [ ] [67. Add Binary](https://leetcode.com/problems/add-binary/) (Easy)
+2. [ ] [190. Reverse Bits](https://leetcode.com/problems/reverse-bits/) (Easy)
+3. [ ] [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) (Easy)
+4. [ ] [136. Single Number](https://leetcode.com/problems/single-number/) (Easy)
+5. [ ] [137. Single Number II](https://leetcode.com/problems/single-number-ii/) (Medium)
+6. [ ] [201. Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/) (Medium)
+
+### Math
+1. [ ] [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) (Easy)
+2. [ ] [66. Plus One](https://leetcode.com/problems/plus-one/) (Easy)
+3. [ ] [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes/) (Medium)
+4. [ ] [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) (Easy)
+5. [ ] [50. Pow(x, n)](https://leetcode.com/problems/powx-n/) (Medium)
+6. [ ] [149. Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) (Hard)
+
+### 1D DP
+1. [ ] [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) (Easy)
+2. [ ] [198. House Robber](https://leetcode.com/problems/house-robber/) (Medium)
+3. [ ] [139. Word Break](https://leetcode.com/problems/word-break/) (Medium)
+4. [ ] [322. Coin Change](https://leetcode.com/problems/coin-change/) (Medium)
+5. [ ] [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) (Medium)
+
+### Multidimensional DP
+1. [ ] [120. Triangle](https://leetcode.com/problems/triangle/) (Medium)
+2. [ ] [64. Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/) (Medium)
+3. [ ] [63. Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) (Medium)
+4. [X] [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) (Medium)
+5. [ ] [97. Interleaving String](https://leetcode.com/problems/interleaving-string/) (Medium)
+6. [ ] [72. Edit Distance](https://leetcode.com/problems/edit-distance/) (Medium)
+7. [ ] [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) (Hard)
+8. [ ] [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) (Hard)
+9. [ ] [221. Maximal Square](https://leetcode.com/problems/maximal-square/) (Medium)
+
 
 # Scaler Course (find under package: ../scaler)
 It contains the course programs and notes which has given by Scaler Tutors and done by Mr. Lucifer
