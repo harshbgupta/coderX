@@ -105,20 +105,20 @@ Important question Of DSA and Other interviews
 10. [X] [112. Path Sum](https://leetcode.com/problems/path-sum/) (Easy)
 11. [X] [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) (Medium)
 12. [X] [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) (Hard)
-13. [ ] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) (Medium)
-14. [ ] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) (Easy)
-15. [ ] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
+13. [X] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) (Medium)
+14. [X] [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) (Easy)
+15. [X] [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) (Medium)
 
 ### Binary Tree BFS
-1. [ ] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) (Medium)
-2. [ ] [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) (Easy)
-3. [ ] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) (Medium)
-4. [ ] [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
+1. [X] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) (Medium)
+2. [X] [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) (Easy)
+3. [X] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) (Medium)
+4. [X] [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) (Medium)
 
 ### Binary Search Tree
-1. [ ] [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) (Easy)
-2. [ ] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) (Medium)
-3. [ ] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) (Medium)
+1. [X] [530. Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) (Easy)
+2. [X] [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) (Medium)
+3. [X] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) (Medium)
 
 ### Graph General
 1. [ ] [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) (Medium)
