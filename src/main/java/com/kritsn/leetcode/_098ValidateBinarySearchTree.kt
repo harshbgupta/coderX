@@ -20,8 +20,8 @@ class _098ValidateBinarySearchTree {
      * https://youtu.be/dSBcCynP1nA?feature=shared
      * 🧠 Algorithm & Approach:
      * - Use recursion to validate the BST property.
-     * - Each node must lie in the valid range (min, max).
-     * - Recursively validate left and right subtrees by updating the range.
+     * - Each node must lie in the valid range (min, max).  ---> Imp Note
+     * - Recursively validate left and right subtrees by updating the range. ---> Imp Note
      *
      * Time Complexity: O(n) — visit each node once
      * Space Complexity: O(h) — recursion stack (h = tree height)
