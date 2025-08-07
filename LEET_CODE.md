@@ -32,6 +32,8 @@ Important question Of DSA and Other interviews
 22. [X] [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) (Medium)
 23. [X] [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) (Easy)
 24. [X] [68. Text Justification](https://leetcode.com/problems/text-justification/) (Hard)
+25. [X] [252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms) (Easy)
+26. [X] [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) (Medium)
 
 ### Two Pointers
 1. [X] [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) (Easy)
