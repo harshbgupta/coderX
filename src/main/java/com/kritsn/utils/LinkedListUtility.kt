@@ -1,6 +1,6 @@
 package com.kritsn.utils
 
-import com.kritsn.kLeetcode._206ReverseLinkedList.ListNode
+import com.kritsn.leetcodeKotlin._206ReverseLinkedList.ListNode
 
 ///////////////////////////////////////////////////////////////////////////
 //           Copyright © 2025 Kritsn LLP. All rights reserved.
