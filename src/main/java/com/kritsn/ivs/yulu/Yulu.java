@@ -1,18 +1,19 @@
-package com.kritsn.ivs;
+package com.kritsn.ivs.yulu;
 
-public class Temp {
-    public static void main(String[] args) {
-        Yulu.convert("aaabccadd");
-    }
-}
-
+/**
+ * Copyright © 2025 Kritsn LLP. All rights reserved.
+ *
+ * @author Radhey (hr-sh)
+ * @since Aug 07, 2025
+ */
 class Yulu {
 
     /**
+     * return a string with character followed by count of it's consecutive occurence.
+     *
+     * e.g.
      * Input: aaabccadd
      * output: a3bb1c2a1d2
-     *
-     * @param s
      */
     public static void convert(String s) {
         int count = 1;
@@ -27,5 +28,8 @@ class Yulu {
         }
 
     }
-}
 
+    public static void main(String[] args) {
+        convert("aaabccaadd");
+    }
+}

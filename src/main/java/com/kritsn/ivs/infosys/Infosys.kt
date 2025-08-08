@@ -1,4 +1,4 @@
-package com.kritsn.ivs
+package com.kritsn.ivs.infosys
 
 import java.net.HttpURLConnection
 import java.net.URL

@@ -1,4 +1,4 @@
-package com.kritsn.ivs;
+package com.kritsn.ivs.aiDash;
 
 public class AiDash {
 
