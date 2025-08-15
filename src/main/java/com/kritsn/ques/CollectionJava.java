@@ -1,4 +1,4 @@
-package com.kritsn.quesJava;
+package com.kritsn.ques;
 class Parent {
     String a = "parent";
 

@@ -61,7 +61,7 @@ class _073SetMatrixZeroes {
             }
         }
 
-        // Set cells to zero based on flags
+        // Set colls to zero based on flags
         for (i in 1 until rows) {
             for (j in 1 until cols) {
                 if (matrix[i][0] == 0 || matrix[0][j] == 0) {
@@ -84,29 +84,31 @@ class _073SetMatrixZeroes {
             }
         }
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _073SetMatrixZeroes()
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _073SetMatrixZeroes()
 
-    val matrix1 = arrayOf(
-        intArrayOf(1, 1, 1),
-        intArrayOf(1, 0, 1),
-        intArrayOf(1, 1, 1)
-    )
-    solver.setZeroes(matrix1)
-    println("Test Case 1: Matrix after setting zeroes:")
-    matrix1.forEach { println(it.contentToString()) }
-    // Expected: [1,0,1], [0,0,0], [1,0,1]
+            val matrix1 = arrayOf(
+                intArrayOf(1, 1, 1),
+                intArrayOf(1, 0, 1),
+                intArrayOf(1, 1, 1)
+            )
+            solver.setZeroes(matrix1)
+            println("Test Case 1: Matrix after setting zeroes:")
+            matrix1.forEach { println(it.contentToString()) }
+            // Expected: [1,0,1], [0,0,0], [1,0,1]
 
-    val matrix2 = arrayOf(
-        intArrayOf(0, 1, 2, 0),
-        intArrayOf(3, 4, 5, 2),
-        intArrayOf(1, 3, 1, 5)
-    )
-    solver.setZeroes(matrix2)
-    println("\nTest Case 2: Matrix after setting zeroes:")
-    matrix2.forEach { println(it.contentToString()) }
-    // Expected: [0,0,0,0], [0,4,5,0], [0,3,1,0]
+            val matrix2 = arrayOf(
+                intArrayOf(0, 1, 2, 0),
+                intArrayOf(3, 4, 5, 2),
+                intArrayOf(1, 3, 1, 5)
+            )
+            solver.setZeroes(matrix2)
+            println("\nTest Case 2: Matrix after setting zeroes:")
+            matrix2.forEach { println(it.contentToString()) }
+            // Expected: [0,0,0,0], [0,4,5,0], [0,3,1,0]
+        }
+    }
 }

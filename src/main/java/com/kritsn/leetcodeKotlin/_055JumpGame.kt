@@ -41,29 +41,32 @@ class _055JumpGame {
         // If loop completes, we can reach the last index
         return true
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _055JumpGame()
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _055JumpGame()
 
-    // Test Case 1: Can jump over zero safely
-    val nums1 = intArrayOf(2, 3, 1, 1, 4)
-    println("Test Case 1: nums = ${nums1.contentToString()} -> Can reach end = ${solver.canJump(nums1)}") // Expected: true
+            // Test Case 1: Can jump over zero safely
+            val nums1 = intArrayOf(2, 3, 1, 1, 4)
+            println("Test Case 1: nums = ${nums1.contentToString()} -> Can reach end = ${solver.canJump(nums1)}") // Expected: true
 
-    // Test Case 2: Stuck at a zero
-    val nums2 = intArrayOf(3, 2, 1, 0, 4)
-    println("Test Case 2: nums = ${nums2.contentToString()} -> Can reach end = ${solver.canJump(nums2)}") // Expected: false
+            // Test Case 2: Stuck at a zero
+            val nums2 = intArrayOf(3, 2, 1, 0, 4)
+            println("Test Case 2: nums = ${nums2.contentToString()} -> Can reach end = ${solver.canJump(nums2)}") // Expected: false
 
-    // Test Case 3: Single element array
-    val nums3 = intArrayOf(0)
-    println("Test Case 3: nums = ${nums3.contentToString()} -> Can reach end = ${solver.canJump(nums3)}") // Expected: true
+            // Test Case 3: Single element array
+            val nums3 = intArrayOf(0)
+            println("Test Case 3: nums = ${nums3.contentToString()} -> Can reach end = ${solver.canJump(nums3)}") // Expected: true
 
-    // Test Case 4: All large jumps
-    val nums4 = intArrayOf(5, 9, 3, 2, 1, 0, 2, 3, 3, 1, 0, 0)
-    println("Test Case 4: nums = ${nums4.contentToString()} -> Can reach end = ${solver.canJump(nums4)}") // Expected: true
+            // Test Case 4: All large jumps
+            val nums4 = intArrayOf(5, 9, 3, 2, 1, 0, 2, 3, 3, 1, 0, 0)
+            println("Test Case 4: nums = ${nums4.contentToString()} -> Can reach end = ${solver.canJump(nums4)}") // Expected: true
 
-    // Test Case 5: Just enough jump
-    val nums5 = intArrayOf(2, 0, 0)
-    println("Test Case 5: nums = ${nums5.contentToString()} -> Can reach end = ${solver.canJump(nums5)}") // Expected: true
+            // Test Case 5: Just enough jump
+            val nums5 = intArrayOf(2, 0, 0)
+            println("Test Case 5: nums = ${nums5.contentToString()} -> Can reach end = ${solver.canJump(nums5)}") // Expected: true
+        }
+
+    }
 }

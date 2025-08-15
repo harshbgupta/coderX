@@ -10,7 +10,7 @@ package com.kritsn.leetcodeKotlin
  * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack,
  * or -1 if needle is not part of haystack.
  */
-class _028FindIndexOfFirstOccurrence {
+class _028FindTheIndexOfTheFirstOccurrenceInAString {
 
     ///////////////////////////////////////////////////////////////////////////
     // Sliding Window Comparison:
@@ -47,29 +47,92 @@ class _028FindIndexOfFirstOccurrence {
         // If needle is not found
         return -1
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _028FindIndexOfFirstOccurrence()
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _028FindTheIndexOfTheFirstOccurrenceInAString()
 
-    val haystack1 = "sadbutsad"
-    val needle1 = "sad"
-    println("Test Case 1: haystack=\"$haystack1\", needle=\"$needle1\" -> Index = ${solver.strStr(haystack1, needle1)}") // Expected: 0
+            // Test Case 1: Needle found at the beginning
+            val haystack1 = "sadbutsad"
+            val needle1 = "sad"
+            println(
+                "Test Case 1: haystack = \"$haystack1\", needle = \"$needle1\" -> Result = ${
+                    solver.strStr(
+                        haystack1,
+                        needle1
+                    )
+                }"
+            )
+            // Expected: 0
 
-    val haystack2 = "leetcode"
-    val needle2 = "leeto"
-    println("Test Case 2: haystack=\"$haystack2\", needle=\"$needle2\" -> Index = ${solver.strStr(haystack2, needle2)}") // Expected: -1
+            // Test Case 2: Needle not found
+            val haystack2 = "leetcode"
+            val needle2 = "leeto"
+            println(
+                "Test Case 2: haystack = \"$haystack2\", needle = \"$needle2\" -> Result = ${
+                    solver.strStr(
+                        haystack2,
+                        needle2
+                    )
+                }"
+            )
+            // Expected: -1
 
-    val haystack3 = "hello"
-    val needle3 = "ll"
-    println("Test Case 3: haystack=\"$haystack3\", needle=\"$needle3\" -> Index = ${solver.strStr(haystack3, needle3)}") // Expected: 2
+            // Test Case 3: Needle found in the middle
+            val haystack3 = "hello"
+            val needle3 = "ll"
+            println(
+                "Test Case 3: haystack = \"$haystack3\", needle = \"$needle3\" -> Result = ${
+                    solver.strStr(
+                        haystack3,
+                        needle3
+                    )
+                }"
+            )
+            // Expected: 2
 
-    val haystack4 = "a"
-    val needle4 = "a"
-    println("Test Case 4: haystack=\"$haystack4\", needle=\"$needle4\" -> Index = ${solver.strStr(haystack4, needle4)}") // Expected: 0
+            // Test Case 4: Needle is empty
+            val haystack4 = "abc"
+            val needle4 = ""
+            println(
+                "Test Case 4: haystack = \"$haystack4\", needle = \"$needle4\" -> Result = ${
+                    solver.strStr(
+                        haystack4,
+                        needle4
+                    )
+                }"
+            )
+            // Expected: 0
 
-    val haystack5 = "mississippi"
-    val needle5 = "issip"
-    println("Test Case 5: haystack=\"$haystack5\", needle=\"$needle5\" -> Index = ${solver.strStr(haystack5, needle5)}") // Expected: 4
+            // Test Case 5: Haystack is shorter than needle
+            val haystack5 = "a"
+            val needle5 = "ab"
+            println(
+                "Test Case 5: haystack = \"$haystack5\", needle = \"$needle5\" -> Result = ${
+                    solver.strStr(
+                        haystack5,
+                        needle5
+                    )
+                }"
+            )
+            // Expected: -1
+
+            // Test Case 6: Needle is the entire haystack
+            val haystack6 = "apple"
+            val needle6 = "apple"
+            println(
+                "Test Case 6: haystack = \"$haystack6\", needle = \"$needle6\" -> Result = ${
+                    solver.strStr(
+                        haystack6,
+                        needle6
+                    )
+                }"
+            )
+            // Expected: 0
+
+            // Test Case 7: Needle found at the
+        }
+    }
+
 }

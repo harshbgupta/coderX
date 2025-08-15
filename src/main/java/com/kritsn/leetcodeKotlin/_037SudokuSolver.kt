@@ -68,28 +68,31 @@ class _037SudokuSolver {
         }
         return true
     }
-}
 
-// 🔍 Main method with clearly labeled test case
-fun main() {
-    val board = arrayOf(
-        charArrayOf('5','3','.','.','7','.','.','.','.'),
-        charArrayOf('6','.','.','1','9','5','.','.','.'),
-        charArrayOf('.','9','8','.','.','.','.','6','.'),
-        charArrayOf('8','.','.','.','6','.','.','.','3'),
-        charArrayOf('4','.','.','8','.','3','.','.','1'),
-        charArrayOf('7','.','.','.','2','.','.','.','6'),
-        charArrayOf('.','6','.','.','.','.','2','8','.'),
-        charArrayOf('.','.','.','4','1','9','.','.','5'),
-        charArrayOf('.','.','.','.','8','.','.','7','9')
-    )
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val board = arrayOf(
+                charArrayOf('5','3','.','.','7','.','.','.','.'),
+                charArrayOf('6','.','.','1','9','5','.','.','.'),
+                charArrayOf('.','9','8','.','.','.','.','6','.'),
+                charArrayOf('8','.','.','.','6','.','.','.','3'),
+                charArrayOf('4','.','.','8','.','3','.','.','1'),
+                charArrayOf('7','.','.','.','2','.','.','.','6'),
+                charArrayOf('.','6','.','.','.','.','2','8','.'),
+                charArrayOf('.','.','.','4','1','9','.','.','5'),
+                charArrayOf('.','.','.','.','8','.','.','7','9')
+            )
 
-    println("Original Sudoku Board:")
-    board.forEach { println(it.concatToString()) }
+            println("Original Sudoku Board:")
+            board.forEach { println(it.concatToString()) }
 
-    val solver = _037SudokuSolver()
-    solver.solveSudoku(board)
+            val solver = _037SudokuSolver()
+            solver.solveSudoku(board)
 
-    println("\nSolved Sudoku Board:")
-    board.forEach { println(it.concatToString()) }
+            println("\nSolved Sudoku Board:")
+            board.forEach { println(it.concatToString()) }
+        }
+
+    }
 }

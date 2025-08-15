@@ -58,37 +58,41 @@ class _048RotateImageOr2DArray {
             }
         }
     }
-}
+    companion object{
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _048RotateImageOr2DArray()
+        @JvmStatic
+        // 🔍 Main method with clearly labeled test cases
+        fun main(args: Array<String>) {
+            val solver = _048RotateImageOr2DArray()
 
-    val m1 = arrayOf(
-        intArrayOf(1, 2, 3),
-        intArrayOf(4, 5, 6),
-        intArrayOf(7, 8, 9)
-    )
+            val m1 = arrayOf(
+                intArrayOf(1, 2, 3),
+                intArrayOf(4, 5, 6),
+                intArrayOf(7, 8, 9)
+            )
 
-    println("Test Case 1 (3×3)")
-    println("Original Matrix →")
-    m1.forEach { println(it.contentToString()) }
-    solver.rotate(m1)
-    println("Final Result (3×3): Rotated Matrix →")
-    m1.forEach { println(it.contentToString()) }
-    // Expected: [7,4,1] [8,5,2] [9,6,3]
+            println("Test Case 1 (3×3)")
+            println("Original Matrix →")
+            m1.forEach { println(it.contentToString()) }
+            solver.rotate(m1)
+            println("Final Result (3×3): Rotated Matrix →")
+            m1.forEach { println(it.contentToString()) }
+            // Expected: [7,4,1] [8,5,2] [9,6,3]
 
-    val m2 = arrayOf(
-        intArrayOf(5, 1, 9,11),
-        intArrayOf(2, 4, 8,10),
-        intArrayOf(13, 3, 6, 7),
-        intArrayOf(15,14,12,16)
-    )
-    println("Test Case 1 (3×3)")
-    println("Original Matrix →")
-    m2.forEach { println(it.contentToString()) }
-    solver.rotate(m2)
-    println("Final Result (3×3): Rotated Matrix →")
-    m2.forEach { println(it.contentToString()) }
-    // Expected: [15,13,2,5] [14,3,4,1] [12,6,8,9] [16,7,10,11]
+            val m2 = arrayOf(
+                intArrayOf(5, 1, 9,11),
+                intArrayOf(2, 4, 8,10),
+                intArrayOf(13, 3, 6, 7),
+                intArrayOf(15,14,12,16)
+            )
+            println("Test Case 1 (3×3)")
+            println("Original Matrix →")
+            m2.forEach { println(it.contentToString()) }
+            solver.rotate(m2)
+            println("Final Result (3×3): Rotated Matrix →")
+            m2.forEach { println(it.contentToString()) }
+            // Expected: [15,13,2,5] [14,3,4,1] [12,6,8,9] [16,7,10,11]
+        }
+
+    }
 }

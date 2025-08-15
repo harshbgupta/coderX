@@ -17,7 +17,7 @@ package com.kritsn.leetcodeKotlin
  * - No duplicate values
  */
 
-class BinarySearchTreeOperations {
+class _000BinarySearchTreeOperations {
 
     // Definition for a binary tree node
     data class TreeNode(var `val`: Int) {
@@ -145,7 +145,7 @@ class BinarySearchTreeOperations {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            val bst = BinarySearchTreeOperations()
+            val bst = _000BinarySearchTreeOperations()
             var root: TreeNode? = null
 
             val values = listOf(10, 5, 20, 3, 7, 15)

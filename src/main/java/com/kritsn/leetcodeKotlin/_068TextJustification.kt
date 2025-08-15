@@ -76,25 +76,26 @@ class _068TextJustification {
 
         return result
     }
-}
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _068TextJustification()
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _068TextJustification()
+            val words1 = arrayOf("This", "is", "an", "example", "of", "text", "justification.")
+            val maxWidth1 = 16
+            println("Test Case 1:")
+            solver.fullJustify(words1, maxWidth1).forEach { println("\"$it\"") }
 
-    val words1 = arrayOf("This", "is", "an", "example", "of", "text", "justification.")
-    val maxWidth1 = 16
-    println("Test Case 1:")
-    solver.fullJustify(words1, maxWidth1).forEach { println("\"$it\"") }
+            println("\nTest Case 2:")
+            val words2 = arrayOf("What","must","be","acknowledgment","shall","be")
+            val maxWidth2 = 16
+            solver.fullJustify(words2, maxWidth2).forEach { println("\"$it\"") }
 
-    println("\nTest Case 2:")
-    val words2 = arrayOf("What","must","be","acknowledgment","shall","be")
-    val maxWidth2 = 16
-    solver.fullJustify(words2, maxWidth2).forEach { println("\"$it\"") }
-
-    println("\nTest Case 3:")
-    val words3 = arrayOf("Science","is","what","we","understand","well","enough","to","explain",
-        "to","a","computer.","Art","is","everything","else","we","do")
-    val maxWidth3 = 20
-    solver.fullJustify(words3, maxWidth3).forEach { println("\"$it\"") }
+            println("\nTest Case 3:")
+            val words3 = arrayOf("Science","is","what","we","understand","well","enough","to","explain",
+                "to","a","computer.","Art","is","everything","else","we","do")
+            val maxWidth3 = 20
+            solver.fullJustify(words3, maxWidth3).forEach { println("\"$it\"") }
+        }
+    }
 }

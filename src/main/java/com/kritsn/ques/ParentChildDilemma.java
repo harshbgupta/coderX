@@ -1,4 +1,4 @@
-package com.kritsn.quesJava;
+package com.kritsn.ques;
 
 class ParentChildDilemma extends Parent{
     String a = "Child";

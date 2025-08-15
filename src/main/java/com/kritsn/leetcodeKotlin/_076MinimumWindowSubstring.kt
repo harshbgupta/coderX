@@ -80,29 +80,32 @@ class _076MinimumWindowSubstring {
 
         return if (minLen == Int.MAX_VALUE) "" else s.substring(minStart, minStart + minLen)
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _076MinimumWindowSubstring()
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _076MinimumWindowSubstring()
 
-    val s1 = "ADOBECODEBANC"
-    val t1 = "ABC"
-    println("Test Case 1: s = \"$s1\", t = \"$t1\" -> Output = \"${solver.minWindow(s1, t1)}\"") // Expected: "BANC"
+            val s1 = "ADOBECODEBANC"
+            val t1 = "ABC"
+            println("Test Case 1: s = \"$s1\", t = \"$t1\" -> Output = \"${solver.minWindow(s1, t1)}\"") // Expected: "BANC"
 
-    val s2 = "a"
-    val t2 = "a"
-    println("Test Case 2: s = \"$s2\", t = \"$t2\" -> Output = \"${solver.minWindow(s2, t2)}\"") // Expected: "a"
+            val s2 = "a"
+            val t2 = "a"
+            println("Test Case 2: s = \"$s2\", t = \"$t2\" -> Output = \"${solver.minWindow(s2, t2)}\"") // Expected: "a"
 
-    val s3 = "a"
-    val t3 = "aa"
-    println("Test Case 3: s = \"$s3\", t = \"$t3\" -> Output = \"${solver.minWindow(s3, t3)}\"") // Expected: ""
+            val s3 = "a"
+            val t3 = "aa"
+            println("Test Case 3: s = \"$s3\", t = \"$t3\" -> Output = \"${solver.minWindow(s3, t3)}\"") // Expected: ""
 
-    val s4 = "ab"
-    val t4 = "b"
-    println("Test Case 4: s = \"$s4\", t = \"$t4\" -> Output = \"${solver.minWindow(s4, t4)}\"") // Expected: "b"
+            val s4 = "ab"
+            val t4 = "b"
+            println("Test Case 4: s = \"$s4\", t = \"$t4\" -> Output = \"${solver.minWindow(s4, t4)}\"") // Expected: "b"
 
-    val s5 = "ab"
-    val t5 = "a"
-    println("Test Case 5: s = \"$s5\", t = \"$t5\" -> Output = \"${solver.minWindow(s5, t5)}\"") // Expected: "a"
+            val s5 = "ab"
+            val t5 = "a"
+            println("Test Case 5: s = \"$s5\", t = \"$t5\" -> Output = \"${solver.minWindow(s5, t5)}\"") // Expected: "a"
+        }
+
+    }
 }

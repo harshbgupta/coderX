@@ -46,24 +46,26 @@ class _058LengthOfLastWord {
 
         return length                    // Step 4: Return the final count
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _058LengthOfLastWord()
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _058LengthOfLastWord()
 
-    val s1 = "Hello World"
-    println("Test Case 1: Input = \"$s1\", Output = ${solver.lengthOfLastWord(s1)}") // Expected: 5
+            val s1 = "Hello World"
+            println("Test Case 1: Input = \"$s1\", Output = ${solver.lengthOfLastWord(s1)}") // Expected: 5
 
-    val s2 = "   fly me   to   the moon  "
-    println("Test Case 2: Input = \"$s2\", Output = ${solver.lengthOfLastWord(s2)}") // Expected: 4
+            val s2 = "   fly me   to   the moon  "
+            println("Test Case 2: Input = \"$s2\", Output = ${solver.lengthOfLastWord(s2)}") // Expected: 4
 
-    val s3 = "luffy is still joyboy"
-    println("Test Case 3: Input = \"$s3\", Output = ${solver.lengthOfLastWord(s3)}") // Expected: 6
+            val s3 = "luffy is still joyboy"
+            println("Test Case 3: Input = \"$s3\", Output = ${solver.lengthOfLastWord(s3)}") // Expected: 6
 
-    val s4 = "singleword"
-    println("Test Case 4: Input = \"$s4\", Output = ${solver.lengthOfLastWord(s4)}") // Expected: 10
+            val s4 = "singleword"
+            println("Test Case 4: Input = \"$s4\", Output = ${solver.lengthOfLastWord(s4)}") // Expected: 10
 
-    val s5 = "a "
-    println("Test Case 5: Input = \"$s5\", Output = ${solver.lengthOfLastWord(s5)}") // Expected: 1
+            val s5 = "a "
+            println("Test Case 5: Input = \"$s5\", Output = ${solver.lengthOfLastWord(s5)}") // Expected: 1
+        }
+    }
 }

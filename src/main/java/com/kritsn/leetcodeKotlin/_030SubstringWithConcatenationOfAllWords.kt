@@ -83,29 +83,32 @@ class _030SubstringWithConcatenationOfAllWords {
 
         return result
     }
-}
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _030SubstringWithConcatenationOfAllWords()
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _030SubstringWithConcatenationOfAllWords()
+            val s1 = "barfoothefoobarman"
+            val words1 = arrayOf("foo", "bar")
+            println("Test Case 1: s = \"$s1\", words = ${words1.contentToString()} -> Indices = ${solver.findSubstring(s1, words1)}") // Expected: [0, 9]
 
-    val s1 = "barfoothefoobarman"
-    val words1 = arrayOf("foo", "bar")
-    println("Test Case 1: s = \"$s1\", words = ${words1.contentToString()} -> Indices = ${solver.findSubstring(s1, words1)}") // Expected: [0, 9]
+            val s2 = "wordgoodgoodgoodbestword"
+            val words2 = arrayOf("word", "good", "best", "word")
+            println("Test Case 2: s = \"$s2\", words = ${words2.contentToString()} -> Indices = ${solver.findSubstring(s2, words2)}") // Expected: []
 
-    val s2 = "wordgoodgoodgoodbestword"
-    val words2 = arrayOf("word", "good", "best", "word")
-    println("Test Case 2: s = \"$s2\", words = ${words2.contentToString()} -> Indices = ${solver.findSubstring(s2, words2)}") // Expected: []
+            val s3 = "barfoofoobarthefoobarman"
+            val words3 = arrayOf("bar", "foo", "the")
+            println("Test Case 3: s = \"$s3\", words = ${words3.contentToString()} -> Indices = ${solver.findSubstring(s3, words3)}") // Expected: [6,9,12]
 
-    val s3 = "barfoofoobarthefoobarman"
-    val words3 = arrayOf("bar", "foo", "the")
-    println("Test Case 3: s = \"$s3\", words = ${words3.contentToString()} -> Indices = ${solver.findSubstring(s3, words3)}") // Expected: [6,9,12]
+            val s4 = "lingmindraboofooowingdingbarrwingmonkeypoundcake"
+            val words4 = arrayOf("fooo","barr","wing","ding","wing")
+            println("Test Case 4: s = \"$s4\", words = ${words4.contentToString()} -> Indices = ${solver.findSubstring(s4, words4)}") // Expected: [13]
 
-    val s4 = "lingmindraboofooowingdingbarrwingmonkeypoundcake"
-    val words4 = arrayOf("fooo","barr","wing","ding","wing")
-    println("Test Case 4: s = \"$s4\", words = ${words4.contentToString()} -> Indices = ${solver.findSubstring(s4, words4)}") // Expected: [13]
+            val s5 = "aaaaaaaaaaaaaa"
+            val words5 = arrayOf("aa","aa")
+            println("Test Case 5: s = \"$s5\", words = ${words5.contentToString()} -> Indices = ${solver.findSubstring(s5, words5)}") // Expected: [0,1,2,3,4,5,6,7,8,9,10]
 
-    val s5 = "aaaaaaaaaaaaaa"
-    val words5 = arrayOf("aa","aa")
-    println("Test Case 5: s = \"$s5\", words = ${words5.contentToString()} -> Indices = ${solver.findSubstring(s5, words5)}") // Expected: [0,1,2,3,4,5,6,7,8,9,10]
+        }
+
+    }
 }

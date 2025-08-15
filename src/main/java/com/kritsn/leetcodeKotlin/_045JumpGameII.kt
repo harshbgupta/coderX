@@ -46,29 +46,32 @@ class _045JumpGameII {
 
         return jumps
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _045JumpGameII()
+    companion object {
 
-    // Test Case 1: Classic jump case
-    val nums1 = intArrayOf(2, 3, 1, 1, 4)
-    println("Test Case 1: nums = ${nums1.contentToString()} -> Min Jumps = ${solver.jump(nums1)}") // Expected: 2
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _045JumpGameII()
 
-    // Test Case 2: One jump is enough
-    val nums2 = intArrayOf(2, 1)
-    println("Test Case 2: nums = ${nums2.contentToString()} -> Min Jumps = ${solver.jump(nums2)}") // Expected: 1
+            // Test Case 1: Classic jump case
+            val nums1 = intArrayOf(2, 3, 1, 1, 4)
+            println("Test Case 1: nums = ${nums1.contentToString()} -> Min Jumps = ${solver.jump(nums1)}") // Expected: 2
 
-    // Test Case 3: Increasing jumps
-    val nums3 = intArrayOf(1, 2, 3, 4, 5)
-    println("Test Case 3: nums = ${nums3.contentToString()} -> Min Jumps = ${solver.jump(nums3)}") // Expected: 3
+            // Test Case 2: One jump is enough
+            val nums2 = intArrayOf(2, 1)
+            println("Test Case 2: nums = ${nums2.contentToString()} -> Min Jumps = ${solver.jump(nums2)}") // Expected: 1
 
-    // Test Case 4: Large jump at the start
-    val nums4 = intArrayOf(10, 1, 1, 1, 1)
-    println("Test Case 4: nums = ${nums4.contentToString()} -> Min Jumps = ${solver.jump(nums4)}") // Expected: 1
+            // Test Case 3: Increasing jumps
+            val nums3 = intArrayOf(1, 2, 3, 4, 5)
+            println("Test Case 3: nums = ${nums3.contentToString()} -> Min Jumps = ${solver.jump(nums3)}") // Expected: 3
 
-    // Test Case 5: All 1s
-    val nums5 = IntArray(6) { 1 }
-    println("Test Case 5: nums = ${nums5.contentToString()} -> Min Jumps = ${solver.jump(nums5)}") // Expected: 5
+            // Test Case 4: Large jump at the start
+            val nums4 = intArrayOf(10, 1, 1, 1, 1)
+            println("Test Case 4: nums = ${nums4.contentToString()} -> Min Jumps = ${solver.jump(nums4)}") // Expected: 1
+
+            // Test Case 5: All 1s
+            val nums5 = IntArray(6) { 1 }
+            println("Test Case 5: nums = ${nums5.contentToString()} -> Min Jumps = ${solver.jump(nums5)}") // Expected: 5
+        }
+    }
 }

@@ -1,4 +1,4 @@
-package com.kritsn.ivs.takingYak;
+package com.kritsn.ques.hashmap;
 
 import java.util.LinkedList;
 import java.util.Objects;

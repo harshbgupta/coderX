@@ -81,13 +81,13 @@ class _015ThreeSum {
 
         for (i in 0 until size) {
             if (i > 0 && nums[i] == nums[i-1]) continue
-            val target = nums[i] * (-1)
+            val target = nums[i] * (-1) // this target is not , -Ve. it means sum of two elements matches, it means three of all sum will be zero
             var left = i+1
             var right = size - 1
             while (left < right) {
                 when {
-                    left > 0 && left-1 != i && nums[left] == nums[left-1] -> left++
-                    right < size - 1 && nums[right] == nums[right+1] -> right--
+                    left > 0 && left-1 != i && nums[left] == nums[left-1] -> left++ //found same left, move forward
+                    right < size - 1 && nums[right] == nums[right+1] -> right-- //found same left,moving on to next ele.
                     nums[left] + nums[right] == target -> {
                         res.add(listOf(nums[i], nums[left], nums[right]))
                         left++

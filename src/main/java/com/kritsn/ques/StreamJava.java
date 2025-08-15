@@ -1,4 +1,4 @@
-package com.kritsn.quesJava;
+package com.kritsn.ques;
 
 import java.util.*;
 import java.util.function.Function;

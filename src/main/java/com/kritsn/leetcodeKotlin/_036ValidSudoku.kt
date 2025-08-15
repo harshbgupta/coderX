@@ -70,35 +70,37 @@ class _036ValidSudoku {
         }
         return true // No violations → valid board
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _036ValidSudoku()
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _036ValidSudoku()
 
-    val board1 = arrayOf(
-        charArrayOf('5','3','.','.','7','.','.','.','.'),
-        charArrayOf('6','.','.','1','9','5','.','.','.'),
-        charArrayOf('.','9','8','.','.','.','.','6','.'),
-        charArrayOf('8','.','.','.','6','.','.','.','3'),
-        charArrayOf('4','.','.','8','.','3','.','.','1'),
-        charArrayOf('7','.','.','.','2','.','.','.','6'),
-        charArrayOf('.','6','.','.','.','.','2','8','.'),
-        charArrayOf('.','.','.','4','1','9','.','.','5'),
-        charArrayOf('.','.','.','.','8','.','.','7','9')
-    )
-    println("Test Case 1: Valid Board -> ${solver.isValidSudoku(board1)}") // Expected: true
+            val board1 = arrayOf(
+                charArrayOf('5','3','.','.','7','.','.','.','.'),
+                charArrayOf('6','.','.','1','9','5','.','.','.'),
+                charArrayOf('.','9','8','.','.','.','.','6','.'),
+                charArrayOf('8','.','.','.','6','.','.','.','3'),
+                charArrayOf('4','.','.','8','.','3','.','.','1'),
+                charArrayOf('7','.','.','.','2','.','.','.','6'),
+                charArrayOf('.','6','.','.','.','.','2','8','.'),
+                charArrayOf('.','.','.','4','1','9','.','.','5'),
+                charArrayOf('.','.','.','.','8','.','.','7','9')
+            )
+            println("Test Case 1: Valid Board -> ${solver.isValidSudoku(board1)}") // Expected: true
 
-    val board2 = arrayOf(
-        charArrayOf('8','3','.','.','7','.','.','.','.'),
-        charArrayOf('6','.','.','1','9','5','.','.','.'),
-        charArrayOf('.','9','8','.','.','.','.','6','.'),
-        charArrayOf('8','.','.','.','6','.','.','.','3'),
-        charArrayOf('4','.','.','8','.','3','.','.','1'),
-        charArrayOf('7','.','.','.','2','.','.','.','6'),
-        charArrayOf('.','6','.','.','.','.','2','8','.'),
-        charArrayOf('.','.','.','4','1','9','.','.','5'),
-        charArrayOf('.','.','.','.','8','.','.','7','9')
-    )
-    println("Test Case 2: Invalid Board (duplicate 8) -> ${solver.isValidSudoku(board2)}") // Expected: false
+            val board2 = arrayOf(
+                charArrayOf('8','3','.','.','7','.','.','.','.'),
+                charArrayOf('6','.','.','1','9','5','.','.','.'),
+                charArrayOf('.','9','8','.','.','.','.','6','.'),
+                charArrayOf('8','.','.','.','6','.','.','.','3'),
+                charArrayOf('4','.','.','8','.','3','.','.','1'),
+                charArrayOf('7','.','.','.','2','.','.','.','6'),
+                charArrayOf('.','6','.','.','.','.','2','8','.'),
+                charArrayOf('.','.','.','4','1','9','.','.','5'),
+                charArrayOf('.','.','.','.','8','.','.','7','9')
+            )
+            println("Test Case 2: Invalid Board (duplicate 8) -> ${solver.isValidSudoku(board2)}") // Expected: false
+        }
+    }
 }

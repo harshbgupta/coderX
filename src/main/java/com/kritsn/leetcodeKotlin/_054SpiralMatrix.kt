@@ -72,40 +72,67 @@ class _054SpiralMatrix {
 
         return result
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
+    companion object {
+        @JvmStatic
+        fun main(array: Array<String>) {
 //        var (varOne,varTwo, varThree) = Triple(0 , 5 , 10) // this is just an example to show how can declare Triple values like we declare top, bottom, left and right
 
-    val solver = _054SpiralMatrix()
+            val solver = _054SpiralMatrix()
 
-    val matrix1 = arrayOf(
-        intArrayOf(1, 2, 3),
-        intArrayOf(4, 5, 6),
-        intArrayOf(7, 8, 9)
-    )
-    println("Test Case 1: matrix = ${matrix1.contentDeepToString()} -> Spiral Order = ${solver.spiralOrder(matrix1)}")
-    // Expected: [1, 2, 3, 6, 9, 8, 7, 4, 5]
+            val matrix1 = arrayOf(
+                intArrayOf(1, 2, 3),
+                intArrayOf(4, 5, 6),
+                intArrayOf(7, 8, 9)
+            )
+            println(
+                "Test Case 1: matrix = ${matrix1.contentDeepToString()} -> Spiral Order = ${
+                    solver.spiralOrder(
+                        matrix1
+                    )
+                }"
+            )
+            // Expected: [1, 2, 3, 6, 9, 8, 7, 4, 5]
 
-    val matrix2 = arrayOf(
-        intArrayOf(1, 2, 3, 4),
-        intArrayOf(5, 6, 7, 8),
-        intArrayOf(9, 10, 11, 12)
-    )
-    println("Test Case 2: matrix = ${matrix2.contentDeepToString()} -> Spiral Order = ${solver.spiralOrder(matrix2)}")
-    // Expected: [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
+            val matrix2 = arrayOf(
+                intArrayOf(1, 2, 3, 4),
+                intArrayOf(5, 6, 7, 8),
+                intArrayOf(9, 10, 11, 12)
+            )
+            println(
+                "Test Case 2: matrix = ${matrix2.contentDeepToString()} -> Spiral Order = ${
+                    solver.spiralOrder(
+                        matrix2
+                    )
+                }"
+            )
+            // Expected: [1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]
 
-    val matrix3 = arrayOf(
-        intArrayOf(1)
-    )
-    println("Test Case 3: matrix = ${matrix3.contentDeepToString()} -> Spiral Order = ${solver.spiralOrder(matrix3)}")
-    // Expected: [1]
+            val matrix3 = arrayOf(
+                intArrayOf(1)
+            )
+            println(
+                "Test Case 3: matrix = ${matrix3.contentDeepToString()} -> Spiral Order = ${
+                    solver.spiralOrder(
+                        matrix3
+                    )
+                }"
+            )
+            // Expected: [1]
 
-    val matrix4 = arrayOf(
-        intArrayOf(1, 2),
-        intArrayOf(3, 4)
-    )
-    println("Test Case 4: matrix = ${matrix4.contentDeepToString()} -> Spiral Order = ${solver.spiralOrder(matrix4)}")
-    // Expected: [1, 2, 4, 3]
+            val matrix4 = arrayOf(
+                intArrayOf(1, 2),
+                intArrayOf(3, 4)
+            )
+            println(
+                "Test Case 4: matrix = ${matrix4.contentDeepToString()} -> Spiral Order = ${
+                    solver.spiralOrder(
+                        matrix4
+                    )
+                }"
+            )
+            // Expected: [1, 2, 4, 3]
+        }
+
+    }
 }

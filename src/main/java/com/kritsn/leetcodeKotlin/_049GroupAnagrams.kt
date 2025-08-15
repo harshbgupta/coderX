@@ -42,24 +42,29 @@ class _049GroupAnagrams {
         // Return all grouped anagram lists
         return groupedAnagrams.values.toList()
     }
-}
+
+    companion object {
+        @JvmStatic
 
 // 🧪 Main method with test cases
-fun main() {
-    val solution = _049GroupAnagrams()
+        fun main(array: Array<String>) {
+            val solution = _049GroupAnagrams()
 
-    println("Test Case 1:")
-    println("Input: [\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"]")
-    println("Output: ${solution.groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat"))}")
-    // Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
+            println("Test Case 1:")
+            println("Input: [\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"]")
+            println("Output: ${solution.groupAnagrams(arrayOf("eat", "tea", "tan", "ate", "nat", "bat"))}")
+            // Output: [["eat", "tea", "ate"], ["tan", "nat"], ["bat"]]
 
-    println("\nTest Case 2:")
-    println("Input: [\"\"]")
-    println("Output: ${solution.groupAnagrams(arrayOf(""))}")
-    // Output: [[""]]
+            println("\nTest Case 2:")
+            println("Input: [\"\"]")
+            println("Output: ${solution.groupAnagrams(arrayOf(""))}")
+            // Output: [[""]]
 
-    println("\nTest Case 3:")
-    println("Input: [\"a\"]")
-    println("Output: ${solution.groupAnagrams(arrayOf("a"))}")
-    // Output: [["a"]]
+            println("\nTest Case 3:")
+            println("Input: [\"a\"]")
+            println("Output: ${solution.groupAnagrams(arrayOf("a"))}")
+            // Output: [["a"]]
+        }
+
+    }
 }

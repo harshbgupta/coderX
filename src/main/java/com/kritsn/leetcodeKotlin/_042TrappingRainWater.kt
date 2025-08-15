@@ -61,29 +61,32 @@ class _042TrappingRainWater {
 
         return water
     }
-}
 
-// 🔍 Main method with clearly labeled test cases
-fun main() {
-    val solver = _042TrappingRainWater()
+    companion object{
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val solver = _042TrappingRainWater()
 
-    // Test Case 1: Standard case
-    val height1 = intArrayOf(0,1,0,2,1,0,1,3,2,1,2,1)
-    println("Test Case 1: height = ${height1.contentToString()} -> Trapped Water = ${solver.trap(height1)}") // Expected: 6
+            // Test Case 1: Standard case
+            val height1 = intArrayOf(0,1,0,2,1,0,1,3,2,1,2,1)
+            println("Test Case 1: height = ${height1.contentToString()} -> Trapped Water = ${solver.trap(height1)}") // Expected: 6
 
-    // Test Case 2: No valleys
-    val height2 = intArrayOf(3, 3, 3, 3)
-    println("Test Case 2: height = ${height2.contentToString()} -> Trapped Water = ${solver.trap(height2)}") // Expected: 0
+            // Test Case 2: No valleys
+            val height2 = intArrayOf(3, 3, 3, 3)
+            println("Test Case 2: height = ${height2.contentToString()} -> Trapped Water = ${solver.trap(height2)}") // Expected: 0
 
-    // Test Case 3: Single valley
-    val height3 = intArrayOf(4,2,0,3,2,5)
-    println("Test Case 3: height = ${height3.contentToString()} -> Trapped Water = ${solver.trap(height3)}") // Expected: 9
+            // Test Case 3: Single valley
+            val height3 = intArrayOf(4,2,0,3,2,5)
+            println("Test Case 3: height = ${height3.contentToString()} -> Trapped Water = ${solver.trap(height3)}") // Expected: 9
 
-    // Test Case 4: Increasing then decreasing
-    val height4 = intArrayOf(1,2,3,4,3,2,1)
-    println("Test Case 4: height = ${height4.contentToString()} -> Trapped Water = ${solver.trap(height4)}") // Expected: 0
+            // Test Case 4: Increasing then decreasing
+            val height4 = intArrayOf(1,2,3,4,3,2,1)
+            println("Test Case 4: height = ${height4.contentToString()} -> Trapped Water = ${solver.trap(height4)}") // Expected: 0
 
-    // Test Case 5: Empty input
-    val height5 = intArrayOf()
-    println("Test Case 5: height = ${height5.contentToString()} -> Trapped Water = ${solver.trap(height5)}") // Expected: 0
+            // Test Case 5: Empty input
+            val height5 = intArrayOf()
+            println("Test Case 5: height = ${height5.contentToString()} -> Trapped Water = ${solver.trap(height5)}") // Expected: 0
+        }
+
+    }
 }
