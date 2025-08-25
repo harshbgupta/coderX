@@ -1,12 +1,8 @@
 package com.kritsn.temp;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
+import java.util.ArrayDeque;
 import java.util.Scanner;
 
 class Revisionjava {
@@ -30,8 +26,30 @@ class Revisionjava {
         }
 
     }
+
+    private static void bfs(Node root) {
+        if (root == null) return;
+        ArrayDeque<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+        queue.add(null);
+        while (!queue.isEmpty()) {
+            Node node = queue.poll();
+            if (node == null) {
+                if (queue.isEmpty()) break;
+                System.out.println();
+                queue.add(null);
+            } else {
+                System.out.println(node.getData());
+                if (node.getLeft() != null) queue.add(node.getLeft());
+                if (node.getRight() != null) queue.add(node.getRight());
+            }
+        }
+
+    }
+
 }
-class Company{
+
+class Company {
     private Object name;
 
     public Object getName() {
@@ -40,5 +58,39 @@ class Company{
 
     public void setName(Object name) {
         this.name = name;
+    }
+}
+
+class Node {
+    private int data;
+    private Node Left;
+    private Node right;
+
+    public Node(int data) {
+        this.data = data;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
+    public Node getLeft() {
+        return Left;
+    }
+
+    public void setLeft(Node left) {
+        Left = left;
+    }
+
+    public Node getRight() {
+        return right;
+    }
+
+    public void setRight(Node right) {
+        this.right = right;
     }
 }
