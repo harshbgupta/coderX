@@ -14,7 +14,7 @@ class Child extends Parent{
     }
 }
 
-class Main{
+class Test{
     public static void main(String[] args) {
         Parent p = new Child();
         System.out.println(p.a); //this is var, so will Referent (parent) based on its type
