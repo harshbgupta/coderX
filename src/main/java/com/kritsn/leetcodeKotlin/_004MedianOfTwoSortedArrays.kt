@@ -52,10 +52,10 @@ class _004MedianOfTwoSortedArrays {
             return findMedianSortedArrays(nums2, nums1)
         }
 
-        val x = nums1.size
-        val y = nums2.size
+        val m = nums1.size
+        val n = nums2.size
         var low = 0
-        var high = x // The search space for the partition is from 0 to x.
+        var high = m // The search space for the partition is from 0 to x.
 
         while (low <= high) {
             // partitionX is the split point in the first array (nums1).
@@ -65,37 +65,42 @@ class _004MedianOfTwoSortedArrays {
             // partitionY is calculated to ensure the total number of elements
             // in the combined left part is half of the total elements.
             // The `+1` handles both even and odd total lengths gracefully.
-            val partitionY = (x + y + 1) / 2 - partitionX
+            val partitionY = (m + n + 1) / 2 - partitionX
 
             // Get the boundary elements for the partitions.
             // If a partition is at an edge (0 or size), we use MIN/MAX values
             // to avoid out-of-bounds errors and to ensure comparisons work correctly.
 
             // maxLeftX is the largest element on the left side of the partition in nums1.
-            val maxLeftX = if (partitionX == 0) Int.MIN_VALUE else nums1[partitionX - 1]
-            // minRightX is the smallest element on the right side of the partition in nums1.
-            val minRightX = if (partitionX == x) Int.MAX_VALUE else nums1[partitionX]
 
-            // maxLeftY is the largest element on the left side of the partition in nums2.
-            val maxLeftY = if (partitionY == 0) Int.MIN_VALUE else nums2[partitionY - 1]
-            // minRightY is the smallest element on the right side of the partition in nums2.
-            val minRightY = if (partitionY == y) Int.MAX_VALUE else nums2[partitionY]
+            // l1 is the largest element on the left side of the partition in nums1.
+            val l1 = if (partitionX == 0) Int.MIN_VALUE else nums1[partitionX - 1]
 
-            // Check if we have found the correct partition.
+            // l2 is the largest element on the left side of the partition in nums2.
+            val l2 = if (partitionY == 0) Int.MIN_VALUE else nums2[partitionY - 1]
+
+
+            // r1 is the smallest element on the right side of the partition in nums1.
+            val r1 = if (partitionX == m) Int.MAX_VALUE else nums1[partitionX]
+
+            // r2 is the smallest element on the right side of the partition in nums2.
+            val r2 = if (partitionY == n) Int.MAX_VALUE else nums2[partitionY]
+
+
             // This is true if the max of the left part is <= the min of the right part.
-            if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
+            if (l1 <= r2 && l2 <= r1) {
                 // We've found the perfect partition, now calculate the median.
-                val totalLength = x + y
+                val totalLength = m + n
                 return if (totalLength % 2 == 0) {
                     // If the total length is even, the median is the average of the
                     // two middle elements: max of the left parts and min of the right parts.
-                    (maxOf(maxLeftX, maxLeftY) + minOf(minRightX, minRightY)) / 2.0
+                    (maxOf(l1, l2) + minOf(r1, r2)) / 2.0
                 } else {
                     // If the total length is odd, the median is the single middle element,
                     // which is the maximum of the left parts.
-                    maxOf(maxLeftX, maxLeftY).toDouble()
+                    maxOf(l1, l2).toDouble()
                 }
-            } else if (maxLeftX > minRightY) {
+            } else if (l1 > r2) {
                 // The partition in nums1 is too far to the right.
                 // We need to move the partition to the left.
                 high = partitionX - 1
@@ -111,12 +116,12 @@ class _004MedianOfTwoSortedArrays {
         throw IllegalArgumentException("Input arrays are not sorted.")
     }
 
-    companion object{
+    companion object {
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val nums1 = intArrayOf(2,4)
-            val nums2 = intArrayOf(1, 3,4,6)
+            val nums1 = intArrayOf(1, 3, 4, 7, 10, 12)
+            val nums2 = intArrayOf(2, 3, 6, 15)
             println(
                 "Median of is ${nums1.contentToString()} & ${nums2.contentToString()} is ${
                     _004MedianOfTwoSortedArrays().findMedianSortedArrays(

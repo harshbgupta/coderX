@@ -10,8 +10,8 @@ package com.kritsn.leetCodeJava;
 public class _004MedianOfTwoSortedArrays {
     public static void main(String[] args) {
         _004MedianOfTwoSortedArrays obj = new _004MedianOfTwoSortedArrays();
-        int[] nums1 = {1, 3};
-        int[] nums2 = {2};
+        int[] nums1 = {1, 3, 4, 7, 10, 12};
+        int[] nums2 = {2, 3, 6, 15};
         System.out.println(obj.findMediumOfTwoSortedArrays(nums1, nums2)); // Output: 2.0
 
     }
@@ -41,16 +41,16 @@ public class _004MedianOfTwoSortedArrays {
             // l1 is the largest element on the left side of the partition in nums1.
             int l1 = (partitionX == 0) ? Integer.MIN_VALUE : nums1[partitionX - 1];
             // l2 is the largest element on the left side of the partition in nums2.
-            int l2 = (partitionX == m) ? Integer.MAX_VALUE : nums1[partitionX];
+            int l2 = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
 
             // r1 is the smallest element on the right side of the partition in nums1.
-            int r1 = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
+            int r1 = (partitionX == m) ? Integer.MAX_VALUE : nums1[partitionX];
             // r2 is the smallest element on the right side of the partition in nums2.
             int r2 = (partitionY == n) ? Integer.MAX_VALUE : nums2[partitionY];
 
             // Check if we have found the correct partition.
             // This is true if the max of the left part is <= the min of the right part.
-            if (l1 <= r2 && r1 <= l2) {
+            if (l1 <= r2 && l2 <= r1) {
                 // We've found the perfect partition, now calculate the median.
                 if ((m + n) % 2 == 0) { //even length
                     // If the total length is even, the median is the average of the
