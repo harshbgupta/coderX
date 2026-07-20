@@ -102,7 +102,9 @@ Thumbs.db
 
 #gradle
 .gradle/
+.claude
 local.properties
+java_pid3184.hprof
 
 #android
 build/

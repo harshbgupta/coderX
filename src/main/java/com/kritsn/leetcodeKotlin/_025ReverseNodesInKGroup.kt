@@ -67,11 +67,11 @@ class _025ReverseNodesInKGroup {
             var kth = getKthNode(groupStart, k)
             if (kth == null) break // Less than k nodes left — no need to reverse
 
-            val groupEnd = kth
+            val currentGroupEnd = kth
             val nextGroupStart = kth.next
 
             // Break the chain to reverse the group cleanly
-            groupEnd.next = null
+            currentGroupEnd.next = null
 
             // Reverse current group
             val reversedHead = reverseList(groupStart)

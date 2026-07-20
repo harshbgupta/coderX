@@ -1,4 +1,4 @@
-package com.kritsn.ivs;
+package com.kritsn.ivs.coupang;
 
 import java.util.HashMap;
 import java.util.Map;
