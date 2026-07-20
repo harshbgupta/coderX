@@ -43,7 +43,7 @@ public class _014LongestCommonPrefix {
         String prefix = strs[0];
         for (int i = 1; i < strs.length; i++) {
             String cur = strs[i];
-            while (!cur.contains(prefix)) {
+            while (!cur.startsWith(prefix)) {
                 if (prefix.isEmpty()) {
                     return "";
                 }
