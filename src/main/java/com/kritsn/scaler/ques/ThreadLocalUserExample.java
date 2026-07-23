@@ -1,4 +1,4 @@
-package com.kritsn.ques;
+package com.kritsn.scaler.ques;
 
 class UserContext {
     private static final ThreadLocal<String> currentUser = new ThreadLocal<>();

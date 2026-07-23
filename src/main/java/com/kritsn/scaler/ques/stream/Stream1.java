@@ -1,4 +1,4 @@
-package com.kritsn.ques.stream;
+package com.kritsn.scaler.ques.stream;
 
 import java.util.*;
 import java.util.stream.Collectors;

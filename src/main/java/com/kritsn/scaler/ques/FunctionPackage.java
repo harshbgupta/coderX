@@ -1,4 +1,4 @@
-package com.kritsn.ques;
+package com.kritsn.scaler.ques;
 
 import java.util.function.Consumer;
 import java.util.function.Function;

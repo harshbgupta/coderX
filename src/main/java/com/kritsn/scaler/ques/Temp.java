@@ -1,4 +1,4 @@
-package com.kritsn.ques;
+package com.kritsn.scaler.ques;
 
 /**
  * Copyright © 2025 Kritsn LLP. All rights reserved.

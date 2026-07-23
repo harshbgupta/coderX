@@ -1,4 +1,4 @@
-package com.kritsn.ques.mutithreading;
+package com.kritsn.scaler.ques.mutithreading;
 
 /**
  * Copyright © 2025 Kritsn LLP. All rights reserved.

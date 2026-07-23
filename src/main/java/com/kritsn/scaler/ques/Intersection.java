@@ -1,4 +1,4 @@
-package com.kritsn.ques;
+package com.kritsn.scaler.ques;
 
 import java.util.ArrayList;
 import java.util.Arrays;

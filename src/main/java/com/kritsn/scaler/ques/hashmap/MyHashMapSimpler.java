@@ -1,4 +1,4 @@
-package com.kritsn.ques.hashmap;
+package com.kritsn.scaler.ques.hashmap;
 
 import java.util.LinkedList;
 
