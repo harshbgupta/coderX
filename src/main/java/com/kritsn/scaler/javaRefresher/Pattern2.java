@@ -14,13 +14,9 @@ public class Pattern2 {
     /**
      * n=4
      * *________* // 8 spaces
-     * <p>
      * **______** // 6 spaces
-     * <p>
      * ***____*** // 4 spaces
-     * <p>
      * ****__**** // 2 spaces
-     * <p>
      * ********** // 0 spaces
      *
      * @param args
@@ -43,13 +39,9 @@ public class Pattern2 {
     /**
      * n = 4
      * ********** // 0 spaces
-     * <p>
      * ****__**** // 2 spaces
-     * <p>
      * ***____*** // 4 spaces
-     * <p>
      * **______** // 6 spaces
-     * <p>
      * *________* // 8 spaces
      *
      * @param args
