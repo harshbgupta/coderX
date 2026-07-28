@@ -33,7 +33,8 @@ public class _042TrappingRainWater {
     // Time Complexity: O(n) — One pass for leftMax, one for rightMax, and one to calculate result.
     // Space Complexity: O(n) — Extra space for leftMax and rightMax arrays.
     // (Can be optimized to O(1) space using two pointers approach.)
-    ///////////////////////////////////////////////////////////////////////////
+
+    /// ////////////////////////////////////////////////////////////////////////
     int trap(int[] height) {
         int n = height.length;
         if (n == 0) return 0;
@@ -65,27 +66,51 @@ public class _042TrappingRainWater {
         return water;
     }
 
+    public int trapOptimal(int[] height) {
+        if (height.length < 3) return 0;
+
+        int left = 0, right = height.length - 1;
+        int leftMax = 0, rightMax = 0;
+        int water = 0;
+
+        while (left <= right) {
+            leftMax = Math.max(leftMax, height[left]);
+            rightMax = Math.max(rightMax, height[right]);
+            if (height[left] < height[right]) {
+                // Left is lower, process left
+                water += leftMax - height[left];
+                left++;
+            } else {
+                // Right is lower or equal, process right
+                water += rightMax - height[right];
+                right--;
+            }
+        }
+
+        return water;
+    }
+
     public static void main(String[] args) {
         _042TrappingRainWater solver = new _042TrappingRainWater();
 
         // Test Case 1: Standard case
         int[] height1 = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
-        System.out.println("Test Case 1: height = " + Arrays.toString(height1) + " -> Trapped Water = " + solver.trap(height1)); // Expected: 6
+        System.out.println("Test Case 1: height = " + Arrays.toString(height1) + " -> Trapped Water = " + solver.trapOptimal(height1)); // Expected: 6
 
         // Test Case 2: No valleys
         int[] height2 = {3, 3, 3, 3};
-        System.out.println("Test Case 2: height = " + Arrays.toString(height2) + " -> Trapped Water = " + solver.trap(height2)); // Expected: 0
+        System.out.println("Test Case 2: height = " + Arrays.toString(height2) + " -> Trapped Water = " + solver.trapOptimal(height2)); // Expected: 0
 
         // Test Case 3: Single valley
         int[] height3 = {4, 2, 0, 3, 2, 5};
-        System.out.println("Test Case 3: height = " + Arrays.toString(height3) + " -> Trapped Water = " + solver.trap(height3)); // Expected: 9
+        System.out.println("Test Case 3: height = " + Arrays.toString(height3) + " -> Trapped Water = " + solver.trapOptimal(height3)); // Expected: 9
 
         // Test Case 4: Increasing then decreasing
         int[] height4 = {1, 2, 3, 4, 3, 2, 1};
-        System.out.println("Test Case 4: height = " + Arrays.toString(height4) + " -> Trapped Water = " + solver.trap(height4)); // Expected: 0
+        System.out.println("Test Case 4: height = " + Arrays.toString(height4) + " -> Trapped Water = " + solver.trapOptimal(height4)); // Expected: 0
 
         // Test Case 5: Empty input
         int[] height5 = {};
-        System.out.println("Test Case 5: height = " + Arrays.toString(height5) + " -> Trapped Water = " + solver.trap(height5)); // Expected: 0
+        System.out.println("Test Case 5: height = " + Arrays.toString(height5) + " -> Trapped Water = " + solver.trapOptimal(height5)); // Expected: 0
     }
 }
