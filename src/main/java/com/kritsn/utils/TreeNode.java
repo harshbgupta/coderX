@@ -8,20 +8,20 @@ package com.kritsn.utils;
  */
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int value;
+    public TreeNode left;
+    public TreeNode right;
 
-    public TreeNode(int val) {
-        this.val = val;
+    public TreeNode(int value) {
+        this.value = value;
     }
 
-    public int getVal() {
-        return val;
+    public int getValue() {
+        return value;
     }
 
-    public void setVal(int val) {
-        this.val = val;
+    public void setValue(int value) {
+        this.value = value;
     }
 
     public TreeNode getLeft() {

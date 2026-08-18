@@ -14,12 +14,14 @@ import java.util.stream.Collectors;
 public class Test {
 
     public static void main(String[] args) {
-
         List<String> list = Arrays.asList("A","B","A","B","A","B","A","C","A","C","A","C");
+        Map.Entry<String, Long> result = list.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet().stream()
+                .max(Map.Entry.comparingByValue())
+                .orElseThrow();
 
-        Map<String, Long> values = list.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-//        Set<Integer> set= values.entrySet().stream().m
-
+        System.out.println(result.getKey() + " -> " + result.getValue()); // A -> 6
     }
 }
 
