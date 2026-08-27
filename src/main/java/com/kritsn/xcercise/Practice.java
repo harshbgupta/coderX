@@ -1,9 +1,6 @@
-package com.kritsn.z;
-
-import kotlin.streams.jdk8.StreamsKt;
+package com.kritsn.xcercise;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 /**
  * Copyright © 2026 Kritsn LLP. All rights reserved.
