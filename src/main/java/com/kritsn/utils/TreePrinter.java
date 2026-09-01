@@ -40,7 +40,7 @@ public class TreePrinter {
             System.out.print("├─");
             indent += "│ ";
         }
-        System.out.println(node.value);
+        System.out.println(node.val);
 
         if (node.left != null || node.right != null) {
             if (node.left != null) {
@@ -83,7 +83,7 @@ public class TreePrinter {
                 if (node == null) {
                     System.out.print("null");
                 } else {
-                    System.out.print(node.value);
+                    System.out.print(node.val);
                     queue.offer(node.left);
                     queue.offer(node.right);
                 }
@@ -110,7 +110,7 @@ public class TreePrinter {
     private static void inOrderTraversal(TreeNode node) {
         if (node == null) return;
         inOrderTraversal(node.left);
-        System.out.print(node.value + " ");
+        System.out.print(node.val + " ");
         inOrderTraversal(node.right);
     }
 
@@ -126,7 +126,7 @@ public class TreePrinter {
 
     private static void preOrderTraversal(TreeNode node) {
         if (node == null) return;
-        System.out.print(node.value + " ");
+        System.out.print(node.val + " ");
         preOrderTraversal(node.left);
         preOrderTraversal(node.right);
     }
