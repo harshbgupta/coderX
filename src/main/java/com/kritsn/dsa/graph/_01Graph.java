@@ -4,6 +4,7 @@ import com.kritsn.utils.Edge;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /*
@@ -70,6 +71,98 @@ public class _01Graph {
         graph[6].add(new Edge(6, 5, 0));
     }
 
+    //BFS Transversal, same as below, just visited and curr is hardcoded/local
+    public static void bfs(ArrayList<Edge>[] graph) {
+        //indirect level order transeverse/search
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[graph.length];
+//        queue.add(graph[0].get(0).src());
+        queue.add(0);
+        while (!queue.isEmpty()) {
+            int curr = queue.poll();
+            if (!visited[curr]) { //not visited
+                //step1: print/use the current Vertex
+                System.out.print(curr + " ");
+
+                //step 2: smark in visited as true
+                visited[curr] = true;
+
+                //step 3: add neighbour to the queue
+                ArrayList<Edge> neighbours = graph[curr];
+                for (Edge edge : neighbours) {
+                    int neighbour = edge.dest();
+                    queue.add(neighbour);
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    //BFS Transversal, same as above, just made it a bit dynamic
+    public static void bfsMuchBetter(ArrayList<Edge>[] graph, boolean[] visited, int start) {
+        //indirect level order transeverse/search
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(start);
+        while (!queue.isEmpty()) {
+            int curr = queue.poll();
+            if (!visited[curr]) { //not visited
+                //step1: print/use the current Vertex
+                System.out.print(curr + " ");
+
+                //step 2: smark in visited as true
+                visited[curr] = true;
+
+                //step 3: add neighbour to the queue
+                ArrayList<Edge> neighbours = graph[curr];
+                for (Edge edge : neighbours) {
+                    int neighbour = edge.dest();
+                    queue.add(neighbour);
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    //DFS Transversal O (V+E)
+    public static void dfs(ArrayList<Edge>[] graph, boolean[] visited, int curr) {
+        //step1: print/use the current Vertex
+        System.out.print(curr + " ");
+
+        //step 2: smark in visited as true
+        visited[curr] = true;
+
+        //step 3: add neighbour to the queue
+        ArrayList<Edge> neighbours = graph[curr];
+        for (Edge edge : neighbours) {
+            int nextNeighbour = edge.dest();
+            if (!visited[nextNeighbour]) { //not visited
+                dfs(graph, visited, nextNeighbour); //recursion ==> DFS
+            }
+        }
+
+    }
+
+    //Ques1: Print all path from given src to destination/target TC: O(V^V)
+    public static void printAllPath(ArrayList<Edge>[] graph, boolean[] visited, int curr, int target, String path) {
+        if (curr == target) {
+            System.out.println(path);
+//            path = "";
+            return;
+        }
+        for (int i = 0; i < graph[curr].size(); i++) {
+            Edge e = graph[curr].get(i);
+            if (!visited[e.dest]) {
+                visited[curr] = true;
+                path = path + e.dest();
+                printAllPath(graph, visited, e.dest(), target, path);
+                visited[curr] = false;
+            }
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Main method
+    /// ////////////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         int v = 7;
          /*
@@ -105,73 +198,13 @@ public class _01Graph {
                 dfs(graph, visited3, i);
             }
         }
-    }
 
-    public static void bfs(ArrayList<Edge>[] graph) {
-        //indirect level order transeverse/search
-        Queue<Integer> queue = new LinkedList<>();
-        boolean[] visited = new boolean[graph.length];
-//        queue.add(graph[0].get(0).src());
-        queue.add(0);
-        while (!queue.isEmpty()) {
-            int curr = queue.poll();
-            if (!visited[curr]) { //not visited
-                //step1: print/use the current Vertex
-                System.out.print(curr + " ");
-
-                //step 2: smark in visited as true
-                visited[curr] = true;
-
-                //step 3: add neighbour to the queue
-                ArrayList<Edge> neighbours = graph[curr];
-                for (Edge edge : neighbours) {
-                    int neighbour = edge.dest();
-                    queue.add(neighbour);
-                }
-            }
-        }
+        //ques 1: Print all path from given src to destination/target
         System.out.println();
-    }
-
-    public static void bfsMuchBetter(ArrayList<Edge>[] graph, boolean[] visited, int start) {
-        //indirect level order transeverse/search
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(start);
-        while (!queue.isEmpty()) {
-            int curr = queue.poll();
-            if (!visited[curr]) { //not visited
-                //step1: print/use the current Vertex
-                System.out.print(curr + " ");
-
-                //step 2: smark in visited as true
-                visited[curr] = true;
-
-                //step 3: add neighbour to the queue
-                ArrayList<Edge> neighbours = graph[curr];
-                for (Edge edge : neighbours) {
-                    int neighbour = edge.dest();
-                    queue.add(neighbour);
-                }
-            }
-        }
-        System.out.println();
-    }
-
-    public static void dfs(ArrayList<Edge>[] graph, boolean[] visited, int curr) {
-        //step1: print/use the current Vertex
-        System.out.print(curr + " ");
-
-        //step 2: smark in visited as true
-        visited[curr] = true;
-
-        //step 3: add neighbour to the queue
-        ArrayList<Edge> neighbours = graph[curr];
-        for (Edge edge : neighbours) {
-            int nextNeighbour = edge.dest();
-            if (!visited[nextNeighbour]) { //not visited
-                dfs(graph, visited, nextNeighbour); //recursion ==> DFS
-            }
-        }
-
+        System.out.println("-----------------------");
+        boolean[] visited4 = new boolean[v];
+        int src = 0;
+        int target = 5;
+        printAllPath(graph, visited4, src, target, "" + src);
     }
 }

@@ -36,28 +36,28 @@ public class _026RemoveDuplicateFromSortedArray {
             return 0;
         }
 
-        // 'insertIndexSlowPointer' is the slow-runner pointer. It marks the position
+        // 'pointer' is the slow-runner pointer. It marks the position
         // for the next unique element. It starts at 1 because the first
         // element is always unique and in its correct place.
-        int insertIndexSlowPointer = 1;
+        int pointer = 1;
 
         // We iterate through the array with a fast-runner 'i' starting from the second element.
-        for (int iOrFastPointer = 1; iOrFastPointer < nums.length; iOrFastPointer++) {
+        for (int i = 1; i < nums.length; i++) {
             // Compare the current element with the last unique element found.
-            // The last unique element is at nums[insertIndexSlowPointer - 1].
-            if (nums[iOrFastPointer] != nums[insertIndexSlowPointer - 1]) {
+            // The last unique element is at nums[pointer - 1].
+            if (nums[i] != nums[pointer - 1]) {
                 // If they are different, we have found a new unique element.
-                // Place it at the 'insertIndexSlowPointer' position.
-                nums[insertIndexSlowPointer] = nums[iOrFastPointer];
-                // Move the insertIndexSlowPointer forward to mark the new boundary of the unique subarray.
-                insertIndexSlowPointer++;
+                // Place it at the 'pointer' position.
+                nums[pointer] = nums[i];
+                // Move the pointer forward to mark the new boundary of the unique subarray.
+                pointer++;
             }
-            // If nums[iOrFastPointer] is a duplicate, we do nothing and just let 'iOrFastPointer' increment,
+            // If nums[i] is a duplicate, we do nothing and just let 'i' increment,
             // effectively skipping the duplicate.
         }
 
-        // 'insertIndexSlowPointer' now represents the total number of unique elements.
-        return insertIndexSlowPointer;
+        // 'pointer' now represents the total number of unique elements.
+        return pointer;
     }
 
     public static void main(String[] args) {
